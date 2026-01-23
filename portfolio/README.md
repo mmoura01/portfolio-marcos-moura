@@ -38,7 +38,7 @@ Utilizo IAs para:
 ## 🔗 Demonstração
 
 O projeto está hospedado e pode ser visitado aqui:
-👉 **[CLIQUE AQUI PARA VER O SITE ONLINE]** *(Substitua pelo link do GitHub Pages depois)*
+👉 https://mmoura01.github.io/portfolio-marcos-moura/
 
 ---
 
@@ -50,5 +50,6 @@ git clone [https://github.com/mmoura01/portfolio-marcos-moura.git](https://githu
 
 # Entre na pasta
 cd portfolio-marcos-moura
+
 
 # Abra o index.html (ou use o Live Server no VS Code)

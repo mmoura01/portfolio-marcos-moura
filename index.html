@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Software Engineer</title>
     
-    <meta name="description" content="Portfolio profissional de Marcos Moura - Desenvolvedor Web.">
+    <meta name="description" content="Portfolio profissional de Marcos Moura - Desenvolvedor Web focado em inovação.">
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body class="dark-theme"> <header class="header" id="header">
+<body class="dark-theme">
+
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
                 <img src="assets/img/logo.jpg" alt="M" class="nav__logo-img">
@@ -33,13 +34,11 @@
             </div>
 
             <div class="nav__actions">
-                <div class="lang__box">
-                    <select id="language-select" class="lang__select">
-                        <option value="pt">PT</option>
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                    </select>
-                </div>
+                <select id="language-select" class="lang__select">
+                    <option value="pt">PT</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
                 <button id="theme-button" class="theme__btn">
                     <i class="fa-regular fa-moon"></i>
                 </button>
@@ -71,9 +70,7 @@
                 </div>
                 <div class="about__data">
                     <h2 class="section__title-left" data-i18n="about-title">Sobre Mim</h2>
-                    <p class="about__text" data-i18n="about-description">
-                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.
-                    </p>
+                    <p class="about__text" data-i18n="about-description">Sou um estudante apaixonado por tecnologia...</p>
                     <div class="about__social">
                         <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/mmoura01" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -102,14 +99,51 @@
                 <div class="projects__grid grid">
                     <article class="project__card">
                         <div class="project__img-box">
-                            <img src="assets/img/antigravity.jpg" alt="Projeto Antigravity">
+                            <img src="assets/img/antigravity.jpg" alt="Projeto">
                         </div>
                         <div class="project__content">
-                            <h3>Antigravity Link Generator</h3>
-                            <p data-i18n="project1-desc">Gerador de links dinâmicos focado em UX.</p>
+                            <h3>Antigravity Link</h3>
+                            <p data-i18n="project1-desc">Gerador de links dinâmicos.</p>
                             <div class="project__links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link" rel="noopener noreferrer">
-                                    <i class="fa-brands fa-github"></i> <span data-i18n="project-code">Código</span>
-                                </a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="project__link" rel="noopener noreferrer">
-                                    <i class="fa-solid fa-arrow-up
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link"><i class="fa-brands fa-github"></i> <span data-i18n="project-code">Código</span></a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title" data-i18n="nav-contact">Contato</h2>
+                <div class="contact__grid grid">
+                    <div class="contact__info">
+                        <h3 data-i18n="contact-subtitle">Vamos conversar?</h3>
+                        <p data-i18n="contact-text">Estou disponível para novos projetos e parcerias.</p>
+                        <div class="contact__list">
+                            <a href="mailto:marcoscuchoa2007@gmail.com" class="contact__item"><i class="fa-solid fa-envelope"></i> marcoscuchoa2007@gmail.com</a>
+                            <a href="https://wa.me/5592993426359" target="_blank" class="contact__item"><i class="fa-brands fa-whatsapp"></i> +55 92 99342-6359</a>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="contact__form">
+                        <input type="text" name="name" class="contact__input" placeholder="Seu Nome" data-i18n-placeholder="ph-name" required>
+                        <input type="email" name="email" class="contact__input" placeholder="Seu E-mail" data-i18n-placeholder="ph-email" required>
+                        <textarea name="message" rows="5" class="contact__input" placeholder="Sua Mensagem" data-i18n-placeholder="ph-message" required></textarea>
+                        <button type="submit" class="btn btn--primary" data-i18n="btn-send">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2026 Marcos Moura. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

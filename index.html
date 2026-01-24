@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Portfólio</title>
+    
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
@@ -59,9 +62,6 @@
                         Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos
                         para criar experiências digitais incríveis.
                     </p>
-                    <p>
-                        Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades.
-                    </p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -71,19 +71,44 @@
             </div>
         </section>
 
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Minhas Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-python-plain colored"></i>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects section">
             <div class="container">
                 <h2 class="section-title">Meus Projetos</h2>
                 <div class="projects-grid">
+                    
                     <article class="project-card">
                         <div class="project-image">
                             <img src="assets/img/antigravity.jpg" alt="Antigravity Link">
                         </div>
                         <div class="project-info">
                             <h3>Antigravity Link Generator</h3>
-                            <p>Gerador de links para redes sociais.</p>
+                            <p>Gerador de links dinâmicos para redes sociais.</p>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
                                 <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
@@ -95,13 +120,14 @@
                         </div>
                         <div class="project-info">
                             <h3>Antigravity Finance</h3>
-                            <p>Dashboard de controle financeiro.</p>
+                            <p>Dashboard de controle financeiro com LocalStorage.</p>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
                                 <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -110,8 +136,12 @@
             <div class="container">
                 <h2 class="section-title">Contato</h2>
                 <div class="contact-buttons">
-                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">Email</a>
-                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn">WhatsApp</a>
+                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn">
+                        <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+                    </a>
                 </div>
             </div>
         </section>

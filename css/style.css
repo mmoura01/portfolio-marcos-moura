@@ -133,7 +133,10 @@ header {
     width: 40px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #00d9ff;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.6),
+        0 0 30px rgba(0, 217, 255, 0.4);
+    animation: rotate360 8s linear infinite;
 }
 .nav-menu ul {
     display: flex;
@@ -366,19 +369,23 @@ input:checked+.slider:before {
 .image-wrapper {
     position: relative;
     width: 400px;
-    height: 400px;
+    height: 500px;
     margin: 0 auto;
 }
 .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--glass-border);
-    box-shadow: 0 0 50px rgba(59, 130, 246, 0.3);
+    border-radius: 50% / 60%;
+    /* Oval shape: horizontal 50%, vertical 60% */
+    border: 4px solid #00d9ff;
+    /* Cyan border matching the reference */
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),
+        0 0 60px rgba(0, 217, 255, 0.5),
+        inset 0 0 20px rgba(0, 217, 255, 0.2);
     position: relative;
     z-index: 2;
-    animation: pulse-border 3s infinite;
+    animation: pulse-cyan-border 3s infinite;
 }
 /* About Section */
 .about {
@@ -668,15 +675,29 @@ footer {
         transform: translate(0, 0);
     }
 }
-@keyframes pulse-border {
+@keyframes pulse-cyan-border {
     0% {
-        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),
+            0 0 60px rgba(0, 217, 255, 0.5),
+            inset 0 0 20px rgba(0, 217, 255, 0.2);
     }
-    70% {
-        box-shadow: 0 0 0 20px rgba(59, 130, 246, 0);
+    50% {
+        box-shadow: 0 0 40px rgba(0, 217, 255, 1),
+            0 0 80px rgba(0, 217, 255, 0.7),
+            inset 0 0 30px rgba(0, 217, 255, 0.3);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),
+            0 0 60px rgba(0, 217, 255, 0.5),
+            inset 0 0 20px rgba(0, 217, 255, 0.2);
+    }
+}
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 /* Scroll Reveal Initial State */
@@ -727,7 +748,8 @@ footer {
     }
     .image-wrapper {
         width: 250px;
-        height: 250px;
+        height: 310px;
+        /* Maintain oval proportion */
     }
     .hero-buttons {
         justify-content: center;
@@ -815,7 +837,8 @@ footer {
     }
     .image-wrapper {
         width: 200px;
-        height: 200px;
+        height: 250px;
+        /* Maintain oval proportion */
     }
     .project-image {
         height: 180px;

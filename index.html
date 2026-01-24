@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Portfólio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container nav-container">
-            <div class="logo">
-                <img src="assets/img/logo.jpg" alt="Logo">
-            </div>
+            <div class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
             <nav>
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
@@ -30,7 +28,7 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
+            <div class="container hero-center">
                 <span class="greeting">Olá, eu sou</span>
                 <h1 class="name">Marcos Moura</h1>
                 <p class="role">Desenvolvedor Web em formação</p>
@@ -42,19 +40,19 @@
         </section>
 
         <section id="about" class="section">
-            <div class="container about-grid">
-                <div class="profile-frame">
+            <div class="container about-flex">
+                <div class="profile-circle">
                     <img src="assets/img/profile.jpg" alt="Marcos Moura">
                 </div>
-                <div class="about-content">
-                    <h2 class="title-left">Sobre Mim</h2>
+                <div class="about-text-box">
+                    <h2 class="title-blue">Sobre Mim</h2>
                     <p>Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.</p>
                     <p>Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades através de projetos práticos e desafios constantes.</p>
-                    <div class="social-icons">
+                    <div class="social-links-row">
                         <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/mu_moura/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -64,10 +62,10 @@
             <div class="container">
                 <h2 class="section-title">Minhas Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-card"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
-                    <div class="skill-card"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
-                    <div class="skill-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-                    <div class="skill-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+                    <div class="skill-box"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+                    <div class="skill-box"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+                    <div class="skill-box"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+                    <div class="skill-box"><i class="devicon-python-plain colored"></i><p>Python</p></div>
                 </div>
             </div>
         </section>
@@ -76,49 +74,40 @@
             <div class="container">
                 <h2 class="section-title">Projetos Recentes</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-img"><img src="assets/img/antigravity.jpg" alt="Projeto 1"></div>
-                        <div class="project-details">
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/antigravity.jpg" alt="Projeto 1"></div>
+                        <div class="card-body">
                             <h3>Antigravity Link Generator</h3>
                             <p>Gerador de links dinâmicos focado em UX e produtividade para redes sociais.</p>
-                            <div class="links">
+                            <div class="card-links">
                                 <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank"><i class="fa-solid fa-external-link"></i> Demo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-img"><img src="assets/img/finance.jpg" alt="Projeto 2"></div>
-                        <div class="project-details">
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/finance.jpg" alt="Projeto 2"></div>
+                        <div class="card-body">
                             <h3>Antigravity Finance</h3>
-                            <p>Dashboard de controle financeiro com cálculos automáticos e persistência no LocalStorage.</p>
-                            <div class="links">
+                            <p>Dashboard de controle financeiro com cálculos automáticos e persistência de dados no LocalStorage.</p>
+                            <div class="card-links">
                                 <a href="https://github.com/mmoura01/antigravity-finance" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank"><i class="fa-solid fa-external-link"></i> Demo</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container text-center">
-                <h2 class="section-title">Vamos Conversar?</h2>
-                <p>Estou disponível para novas oportunidades e colaborações.</p>
-                <div class="contact-btns">
-                    <a href="mailto:marcoscuchoa2007@gmail.com" class="btn-contact"><i class="fa-solid fa-envelope"></i> Enviar Email</a>
-                    <a href="https://wa.me/+5592993426359" target="_blank" class="btn-contact"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
-        <div class="footer-socials">
-            <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="container footer-content">
+            <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
+            <div class="footer-icons">
+                <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

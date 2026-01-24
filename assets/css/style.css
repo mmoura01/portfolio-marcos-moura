@@ -1,125 +1,77 @@
-/*=============== VARIABLES CSS (Seu código original) ===============*/
 :root {
-  --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  --first-color: hsl(207, 65%, 65%);
-  --title-color: hsl(207, 4%, 16%);
-  --text-color: hsl(207, 4%, 28%);
-  --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsl(207, 4%, 99%);
-  --container-color: #fff;
-
-  /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-
-  /*========== Margenes Bottom ==========*/
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
+    --first-color: #38bdf8;
+    --first-color-alt: #0ea5e9;
+    --title-color: #f1f5f9;
+    --text-color: #94a3b8;
+    --body-color: #0b1120;
+    --container-color: #111a2e;
+    --header-bg: rgba(11, 17, 32, 0.75);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Responsive typography */
-@media screen and (min-width: 968px) {
-  :root {
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-  }
+body.light-theme {
+    --body-color: #f8fafc;
+    --container-color: #ffffff;
+    --title-color: #0f172a;
+    --text-color: #475569;
+    --header-bg: rgba(248, 250, 252, 0.75);
 }
 
-/*=============== BASE ===============*/
-* { box-sizing: border-box; padding: 0; margin: 0; }
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: .4s;
-}
-h1, h2, h3 { color: var(--title-color); font-weight: 600; }
-ul { list-style: none; }
-a { text-decoration: none; }
-img { max-width: 100%; height: auto; }
-
-/*=============== LAYOUT ===============*/
-.container {
-  max-width: 968px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
-}
-@media screen and (min-width: 1024px) {
-  .container { margin-left: auto; margin-right: auto; }
+/* Responsividade de Fonte Inteligente */
+html { font-size: 100%; scroll-behavior: smooth; }
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--body-color); 
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-.grid { display: grid; gap: 1.5rem; }
-.section { padding: 4.5rem 0 2rem; }
-.section-title { text-align: center; margin-bottom: var(--mb-2); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 
-/*=============== HEADER & NAV ===============*/
-.header {
-  width: 100%;
-  background-color: var(--body-color);
-  position: fixed;
-  top: 0; left: 0;
-  z-index: 100;
-}
-.nav-container {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-list { display: flex; gap: 2rem; }
-.nav-link { color: var(--text-color); font-weight: 500; transition: .3s; }
-.nav-link:hover { color: var(--first-color); }
-.logo img { height: 30px; border-radius: 50%; }
-
-/*=============== ABOUT (Onde estava o problema) ===============*/
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+/* HEADER GLASSMORPHISM */
+.header { 
+    width: 100%; position: fixed; top: 0; left: 0; z-index: 100;
+    background: var(--header-bg); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.1);
 }
 
-.img-wrapper {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 4px solid var(--first-color);
-  overflow: hidden; /* Mantém a imagem dentro do círculo */
-  flex-shrink: 0;
+/* HERO SECTION - TIPOGRAFIA INOVADORA */
+.home { min-height: 100vh; display: flex; align-items: center; }
+.home__title { 
+    font-size: clamp(2.5rem, 8vw, 4.5rem); 
+    color: var(--title-color); 
+    font-weight: 800; line-height: 1.1; margin: 1rem 0;
 }
+.home__greeting { color: var(--first-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
 
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Não deixa a foto esticar */
+/* ABOUT - GRID RESPONSIVO */
+.about__grid { 
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    align-items: center; gap: 4rem; 
 }
+.about__img-wrapper {
+    position: relative; width: clamp(250px, 30vw, 350px); height: clamp(250px, 30vw, 350px);
+    margin: 0 auto;
+}
+.about__img { 
+    width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+    border: 4px solid var(--first-color); padding: 5px;
+    transition: var(--transition);
+}
+.about__img:hover { transform: scale(1.05) rotate(2deg); }
 
-/*=============== PROJECTS (Cards originais) ===============*/
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+/* BOTÕES ESTILIZADOS */
+.btn { 
+    padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700;
+    transition: var(--transition); display: inline-block; cursor: pointer;
 }
-.project-card {
-  background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.project-links { display: flex; gap: 1rem; margin-top: 1rem; }
-.link-icon { color: var(--first-color); font-weight: 500; }
+.btn--primary { background: var(--first-color); color: #fff; box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2); }
+.btn--primary:hover { background: var(--first-color-alt); transform: translateY(-3px); box-shadow: 0 15px 25px rgba(56, 189, 248, 0.3); }
 
-/* Responsivo para Celular */
-@media screen and (max-width: 768px) {
-  .about-container, .projects-grid {
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .nav__menu { display: none; } /* Adicione um menu hambúrguer se necessário */
+    .home { text-align: center; }
+    .about__grid { text-align: center; }
 }

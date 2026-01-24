@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Marcos Moura - Desenvolvedor Web Front-end Senior e Especialista em UX/UI. Stack: HTML, CSS, JavaScript, Python e IA.">
+    <meta name="keywords"
+        content="Marcos Moura, Desenvolvedor Web, Front-end, UX/UI, Portfolio, HTML, CSS, JavaScript, Python, IA">
+    <meta name="author" content="Marcos Moura">
+    <meta property="og:title" content="Marcos Moura - Web Developer & UX/UI Specialist">
+    <meta property="og:description"
+        content="Portfólio profissional de Marcos Moura. Projetos inovadores e soluções tecnológicas.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Marcos Moura | Web Developer & UX/UI</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="glass">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo de Marcos Moura" id="header-logo">
+                <span>Marcos Moura</span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </label>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <h1>Olá, eu sou <span class="gradient-text">Marcos Moura</span></h1>
+                    <h2>Senior Front-end Developer & UX/UI Specialist</h2>
+
+                    <div class="terminal-window glass">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">bash --marcos-moura</span>
+                        </div>
+                        <div class="terminal-body font-mono">
+                            <p>> const status = "Disponível para projetos";</p>
+                            <p>> const stack = ["Web", "Design", "AI"];</p>
+                            <p>> <span id="typewriter"></span><span class="cursor">|</span></p>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-outline">Fale Comigo</a>
+                    </div>
+                </div>
+
+                <div class="hero-image scroll-reveal delay-200">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="Foto de Perfil de Marcos Moura">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Sobre Mim</h2>
+
+                <div class="about-content glass scroll-reveal">
+                    <p class="about-text">
+                        Com uma paixão inabalável por tecnologia e design, construo experiências digitais que não apenas
+                        funcionam, mas encantam.
+                        Minha jornada evoluiu do design gráfico para a engenharia de software, combinando estética
+                        apurada com código eficiente.
+                    </p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h3>Início na Web</h3>
+                                <p>Domínio de HTML, CSS e JavaScript Vanilla.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h3>Python & Fullstack</h3>
+                                <p>Expansão para Back-end e automação com Python.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>AI Integation</h3>
+                                <p>Desenvolvimento assistido por IA e criação de interfaces inteligentes.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Hoje</div>
+                            <div class="timeline-content">
+                                <h3>Web & AI Specialist</h3>
+                                <p>Criando o futuro da web com tecnologias modernas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Tech Stack</h2>
+
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-card glass scroll-reveal">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3>HTML5</h3>
+                        <p>Semântica e Acessibilidade</p>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card glass scroll-reveal delay-100">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, Animations</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card glass scroll-reveal delay-200">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h3>JavaScript</h3>
+                        <p>ES6+, DOM, APIs</p>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card glass scroll-reveal delay-300">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h3>Python</h3>
+                        <p>Automação e Backend</p>
+                    </div>
+                </div>
+
+                <div class="ia-workflow glass scroll-reveal">
+                    <h3><i class="fas fa-robot"></i> IA-Driven Workflow</h3>
+                    <p>Utilizo ferramentas avançadas de Inteligência Artificial para otimizar o desenvolvimento, gerar
+                        assets e refinar a experiência do usuário, garantindo entregas mais rápidas e inovadoras.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Projetos em Destaque</h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass scroll-reveal">
+                        <div class="project-image">
+                            <!-- Placeholder image generated via code/css later or use a generic one if available. Using a div with gradient for now as no project images provided -->
+                            <div class="project-img-placeholder gradient-1"></div>
+                            <div class="project-overlay">
+                                <button class="btn btn-sm">Demo</button>
+                                <button class="btn btn-sm btn-outline">Código</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard AI</h3>
+                            <p>Painel administrativo com análises preditivas.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass scroll-reveal delay-100">
+                        <div class="project-image">
+                            <div class="project-img-placeholder gradient-2"></div>
+                            <div class="project-overlay">
+                                <button class="btn btn-sm">Demo</button>
+                                <button class="btn btn-sm btn-outline">Código</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Moderno</h3>
+                            <p>Loja virtual com experiência de compra fluida.</p>
+                            <div class="tags">
+                                <span>JS</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass scroll-reveal delay-200">
+                        <div class="project-image">
+                            <div class="project-img-placeholder gradient-3"></div>
+                            <div class="project-overlay">
+                                <button class="btn btn-sm">Demo</button>
+                                <button class="btn btn-sm btn-outline">Código</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>App Financeiro</h3>
+                            <p>Gestão de finanças pessoais com gráficos interativos.</p>
+                            <div class="tags">
+                                <span>Vue</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Vamos Conversar?</h2>
+
+                <div class="contact-wrapper glass scroll-reveal">
+                    <p>Estou sempre aberto a novas oportunidades e parcerias. Entre em contato!</p>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                            aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/5592993426359" target="_blank" rel="noopener noreferrer"
+                            class="social-btn whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="email-container">
+                        <span id="email-text">marcosuchoa2007@gmail.com</span>
+                        <button id="copy-email-btn" class="btn-icon" aria-label="Copiar E-mail">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                        <span id="copy-feedback" class="fade-out">Copiado!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> e IA.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

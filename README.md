@@ -1,55 +1,37 @@
-# Portfólio de Desenvolvedor - Marcos Moura 🚀
+# 🚀 Portfólio Profissional - Marcos Moura
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-green?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
-</p>
+Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minha jornada como desenvolvedor web, minhas habilidades técnicas e os projetos que venho construindo.
 
-Bem-vindo ao meu portfólio oficial! Este espaço foi criado para documentar minha evolução técnica e expor os projetos onde aplico conceitos de design responsivo e interatividade.
+👉 **[Acesse o site ao vivo aqui](https://mmoura01.github.io/portfolio-marcos-moura/)**
 
-## 👨‍💻 Sobre Mim
+## 🛠️ Tecnologias Utilizadas
 
-Sou um entusiasta da tecnologia em transição para o desenvolvimento web. Acredito que a tecnologia deve ser acessível e visualmente atraente. Meu foco atual é dominar o ecossistema Front-End e criar soluções que facilitem a vida dos usuários.
+* **HTML5**: Estrutura semântica e acessível.
+* **CSS3**: Estilização moderna com Flexbox, Grid e Design Responsivo.
+* **JavaScript (ES6+)**: Interatividade, manipulação de DOM e controle de tema.
+* **Font Awesome & Devicons**: Biblioteca de ícones profissionais.
+* **Google Fonts**: Tipografia otimizada (Fonte Inter).
 
-## 🤖 Workflow & IA (Inteligência Artificial)
+## ✨ Funcionalidades e Diferenciais Técnicos
 
-Acredito na programação moderna e eficiente. Este projeto foi desenvolvido utilizando **Inteligência Artificial (Gemini/Claude)** como *Pair Programmer*. 
+### 🌓 Gestão de Temas (Dark/Light Mode)
+- Sistema de troca de tema com persistência de dados no `localStorage`.
+- **Navegador Imersivo**: A cor da barra de endereços (theme-color) no celular muda dinamicamente via JavaScript para sincronizar com o tema escolhido, proporcionando uma experiência de aplicativo nativo.
 
-Utilizo IAs para:
-* Refatoração e otimização de lógica em JavaScript.
-* Discussão de melhores práticas de arquitetura CSS.
-* Resolução de bugs complexos e aprendizado acelerado.
-> *Saber fazer as perguntas certas para a IA é uma das habilidades que venho aperfeiçoando para entregar códigos de alta qualidade em menos tempo.*
+### 📱 Experiência do Usuário (UX)
+- **Design Responsivo**: Interface totalmente adaptada para celulares, tablets e desktops.
+- **Favicon Personalizado**: Identidade visual presente na aba do navegador.
+- **Navegação Suave**: Implementação de *smooth scroll* para uma rolagem fluida entre as seções.
 
-## 🛠 Principais Tecnologias
+### 🛡️ Segurança e Boas Práticas
+- **Links Externos Seguros**: Uso rigoroso de `target="_blank"` e `rel="noopener noreferrer"` em todos os links externos, garantindo a segurança do usuário e evitando vulnerabilidades de desempenho.
+- **SEO Básico**: Configuração de meta tags e títulos descritivos para melhor indexação.
 
-* **HTML5 & CSS3**: Construção de layouts semânticos e estilização com variáveis modernas.
-* **JavaScript (ES6+)**: Manipulação dinâmica do DOM e controle de temas (Dark/Light Mode).
-* **Responsividade**: Mobile-first design para garantir boa visualização em qualquer tela.
+## 📁 Estrutura do Projeto
 
-## ✨ Funcionalidades Destaque
-
-* 🌓 **Alternador de Tema**: Interface que respeita a preferência do usuário.
-* 📱 **Menu Mobile**: Navegação otimizada para dispositivos touch.
-* 🎨 **Animações Fluidas**: Uso de transições suaves para melhorar a experiência do usuário (UX).
-
-## 🔗 Demonstração
-
-O projeto está hospedado e pode ser visitado aqui:
-👉 https://mmoura01.github.io/portfolio-marcos-moura/
+* `/assets`: Organização de imagens, ícones, estilos (CSS) e scripts (JS).
+* `index.html`: Ponto de entrada do site hospedado via GitHub Pages.
+* `favicon.png`: Arquivo de ícone de alta resolução.
 
 ---
-
-### 🚀 Como testar este projeto
-
-```bash
-# Clone o repositório
-git clone [https://github.com/mmoura01/portfolio-marcos-moura.git](https://github.com/mmoura01/portfolio-marcos-moura.git)
-
-# Entre na pasta
-cd portfolio-marcos-moura
-
-
-# Abra o index.html (ou use o Live Server no VS Code)
+Desenvolvido com 💙 por [Marcos Moura](https://www.linkedin.com/in/marcos-uchoa-moura)

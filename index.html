@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Software Engineer</title>
     
-    <meta name="description" content="Portfolio de Marcos Moura - Desenvolvedor Web focado em soluções modernas.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio profissional de Marcos Moura - Desenvolvedor Web.">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body>
-    <header class="header" id="header">
+<body class="dark-theme"> <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img src="assets/img/logo.jpg" alt="Logo" class="nav__logo-img">
+                <img src="assets/img/logo.jpg" alt="M" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -32,11 +33,13 @@
             </div>
 
             <div class="nav__actions">
-                <select id="language-select" class="lang__select">
-                    <option value="pt">PT</option>
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                </select>
+                <div class="lang__box">
+                    <select id="language-select" class="lang__select">
+                        <option value="pt">PT</option>
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                    </select>
+                </div>
                 <button id="theme-button" class="theme__btn">
                     <i class="fa-regular fa-moon"></i>
                 </button>
@@ -46,7 +49,7 @@
 
     <main class="main">
         <section class="home section" id="home">
-            <div class="home__container container">
+            <div class="home__container container grid">
                 <div class="home__content">
                     <span class="home__greeting" data-i18n="hero-greeting">Olá, eu sou</span>
                     <h1 class="home__title">Marcos Moura</h1>
@@ -69,20 +72,44 @@
                 <div class="about__data">
                     <h2 class="section__title-left" data-i18n="about-title">Sobre Mim</h2>
                     <p class="about__text" data-i18n="about-description">
-                        Estudante apaixonado por tecnologia, focado em criar soluções digitais modernas e eficientes.
+                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.
                     </p>
                     <div class="about__social">
-                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mmoura01" target="_blank" class="social__link"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://x.com/mmarcosuchoa" target="_blank" class="social__link"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://instagram.com/mu_moura/" target="_blank" class="social__link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mmoura01" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/mmarcosuchoa" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/mu_moura/" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        </main>
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title" data-i18n="skills-title">Minhas Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill__card"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
+                    <div class="skill__card"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
+                    <div class="skill__card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+                    <div class="skill__card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+                </div>
+            </div>
+        </section>
 
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title" data-i18n="projects-title">Projetos Recentes</h2>
+                <div class="projects__grid grid">
+                    <article class="project__card">
+                        <div class="project__img-box">
+                            <img src="assets/img/antigravity.jpg" alt="Projeto Antigravity">
+                        </div>
+                        <div class="project__content">
+                            <h3>Antigravity Link Generator</h3>
+                            <p data-i18n="project1-desc">Gerador de links dinâmicos focado em UX.</p>
+                            <div class="project__links">
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> <span data-i18n="project-code">Código</span>
+                                </a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="project__link" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up

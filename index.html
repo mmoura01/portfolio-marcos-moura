@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Software Engineer</title>
-    
-    <meta name="description" content="Portfolio profissional de Marcos Moura - Desenvolvedor Web.">
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -21,7 +17,6 @@
             <a href="#home" class="nav__logo">
                 <img src="assets/img/logo.jpg" alt="Logo" class="nav__logo-img">
             </a>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link" data-i18n="nav-home">Home</a></li>
@@ -31,16 +26,13 @@
                     <li><a href="#contact" class="nav__link" data-i18n="nav-contact">Contato</a></li>
                 </ul>
             </div>
-
             <div class="nav__actions">
                 <select id="language-select" class="lang__select">
                     <option value="pt">PT</option>
                     <option value="en">EN</option>
                     <option value="es">ES</option>
                 </select>
-                <button id="theme-button" class="theme__btn">
-                    <i class="fa-regular fa-moon"></i>
-                </button>
+                <button id="theme-button" class="theme__btn"><i class="fa-regular fa-moon"></i></button>
             </div>
         </nav>
     </header>
@@ -60,36 +52,26 @@
             </div>
         </section>
 
-        <section class="about section" id="about">
-            <div class="container about__grid">
-                <div class="about__img-container">
-                    <div class="about__img-wrapper">
-                        <img src="assets/img/profile.jpg" alt="Marcos" class="about__img">
-                    </div>
-                </div>
-                <div class="about__data">
-                    <h2 class="section__title-left" data-i18n="about-title">Sobre Mim</h2>
-                    <p class="about__text" data-i18n="about-description">
-                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.
-                    </p>
-                    <div class="about__social">
-                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mmoura01" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://x.com/mmarcosuchoa" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://instagram.com/mu_moura/" target="_blank" class="social__link" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="skills section" id="skills">
             <div class="container">
                 <h2 class="section__title" data-i18n="skills-title">Minhas Skills</h2>
                 <div class="skills__grid">
-                    <div class="skill__card"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
-                    <div class="skill__card"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
-                    <div class="skill__card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-                    <div class="skill__card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+                    <div class="skill__card">
+                        <div class="skill__icon"><i class="devicon-html5-plain colored"></i></div>
+                        <p class="skill__name">HTML5</p>
+                    </div>
+                    <div class="skill__card">
+                        <div class="skill__icon"><i class="devicon-css3-plain colored"></i></div>
+                        <p class="skill__name">CSS3</p>
+                    </div>
+                    <div class="skill__card">
+                        <div class="skill__icon"><i class="devicon-javascript-plain colored"></i></div>
+                        <p class="skill__name">JavaScript</p>
+                    </div>
+                    <div class="skill__card">
+                        <div class="skill__icon"><i class="devicon-python-plain colored"></i></div>
+                        <p class="skill__name">Python</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,24 +81,12 @@
                 <h2 class="section__title" data-i18n="projects-title">Projetos Recentes</h2>
                 <div class="projects__grid grid">
                     <article class="project__card">
-                        <div class="project__img-box"><img src="assets/img/antigravity.jpg" alt="Antigravity Link"></div>
+                        <div class="project__img-box"><img src="assets/img/antigravity.jpg" alt="Antigravity"></div>
                         <div class="project__content">
                             <h3>Antigravity Link</h3>
                             <p data-i18n="project1-desc">Gerador de links dinâmicos focado em UX.</p>
                             <div class="project__links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link"><i class="fa-brands fa-github"></i> <span data-i18n="project-code">Código</span></a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project__card">
-                        <div class="project__img-box"><img src="assets/img/finance.jpg" alt="Finance"></div>
-                        <div class="project__content">
-                            <h3>Antigravity Finance</h3>
-                            <p data-i18n="project2-desc">Dashboard de controle financeiro profissional.</p>
-                            <div class="project__links">
-                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="project__link"><i class="fa-brands fa-github"></i> <span data-i18n="project-code">Código</span></a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link"><i class="fa-brands fa-github"></i> Código</a>
                             </div>
                         </div>
                     </article>
@@ -130,13 +100,11 @@
                 <div class="contact__grid grid">
                     <div class="contact__info">
                         <h3 class="contact__subtitle" data-i18n="contact-subtitle">Vamos conversar?</h3>
-                        <p data-i18n="contact-text">Estou disponível para novos projetos e parcerias.</p>
                         <div class="contact__list">
                             <a href="mailto:marcoscuchoa2007@gmail.com" class="contact__item"><i class="fa-solid fa-envelope"></i> marcoscuchoa2007@gmail.com</a>
                             <a href="https://wa.me/5592993426359" target="_blank" class="contact__item"><i class="fa-brands fa-whatsapp"></i> +55 92 99342-6359</a>
                         </div>
                     </div>
-
                     <form action="https://formspree.io/f/xzdeyjkk" method="POST" class="contact__form">
                         <input type="text" name="name" class="contact__input" data-i18n-placeholder="ph-name" required>
                         <input type="email" name="email" class="contact__input" data-i18n-placeholder="ph-email" required>
@@ -147,10 +115,6 @@
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container"><p>&copy; 2026 Marcos Moura. All rights reserved.</p></div>
-    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Software Engineer</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -17,6 +19,7 @@
             <a href="#home" class="nav__logo">
                 <img src="assets/img/logo.jpg" alt="Logo" class="nav__logo-img">
             </a>
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link" data-i18n="nav-home">Home</a></li>
@@ -26,13 +29,16 @@
                     <li><a href="#contact" class="nav__link" data-i18n="nav-contact">Contato</a></li>
                 </ul>
             </div>
+
             <div class="nav__actions">
                 <select id="language-select" class="lang__select">
                     <option value="pt">PT</option>
                     <option value="en">EN</option>
                     <option value="es">ES</option>
                 </select>
-                <button id="theme-button" class="theme__btn"><i class="fa-regular fa-moon"></i></button>
+                <button id="theme-button" class="theme__btn">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -52,24 +58,43 @@
             </div>
         </section>
 
+        <section class="about section" id="about">
+            <div class="container about__grid">
+                <div class="about__img-container">
+                    <img src="assets/img/profile.jpg" alt="Marcos" class="about__img">
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title-left" data-i18n="about-title">Sobre Mim</h2>
+                    <p class="about__text" data-i18n="about-description">
+                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos.
+                    </p>
+                    <div class="about__social">
+                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mmoura01" target="_blank" class="social__link"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/mmarcosuchoa" target="_blank" class="social__link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="skills section" id="skills">
             <div class="container">
                 <h2 class="section__title" data-i18n="skills-title">Minhas Skills</h2>
                 <div class="skills__grid">
                     <div class="skill__card">
-                        <div class="skill__icon"><i class="devicon-html5-plain colored"></i></div>
+                        <i class="devicon-html5-plain colored"></i>
                         <p class="skill__name">HTML5</p>
                     </div>
                     <div class="skill__card">
-                        <div class="skill__icon"><i class="devicon-css3-plain colored"></i></div>
+                        <i class="devicon-css3-plain colored"></i>
                         <p class="skill__name">CSS3</p>
                     </div>
                     <div class="skill__card">
-                        <div class="skill__icon"><i class="devicon-javascript-plain colored"></i></div>
+                        <i class="devicon-javascript-plain colored"></i>
                         <p class="skill__name">JavaScript</p>
                     </div>
                     <div class="skill__card">
-                        <div class="skill__icon"><i class="devicon-python-plain colored"></i></div>
+                        <i class="devicon-python-plain colored"></i>
                         <p class="skill__name">Python</p>
                     </div>
                 </div>
@@ -101,8 +126,8 @@
                     <div class="contact__info">
                         <h3 class="contact__subtitle" data-i18n="contact-subtitle">Vamos conversar?</h3>
                         <div class="contact__list">
-                            <a href="mailto:marcoscuchoa2007@gmail.com" class="contact__item"><i class="fa-solid fa-envelope"></i> marcoscuchoa2007@gmail.com</a>
-                            <a href="https://wa.me/5592993426359" target="_blank" class="contact__item"><i class="fa-brands fa-whatsapp"></i> +55 92 99342-6359</a>
+                            <a href="mailto:marcoscuchoa2007@gmail.com" class="contact__item"><i class="fa-solid fa-envelope"></i> e-mail</a>
+                            <a href="https://wa.me/5592993426359" target="_blank" class="contact__item"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                         </div>
                     </div>
                     <form action="https://formspree.io/f/xzdeyjkk" method="POST" class="contact__form">

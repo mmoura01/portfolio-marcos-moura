@@ -1,41 +1,58 @@
-const translations = {
-    pt: {
-        "nav-home": "Home", "nav-about": "Sobre", "nav-skills": "Skills", "nav-projects": "Projetos", "nav-contact": "Contato",
-        "hero-greeting": "Olá, eu sou", "hero-role": "Desenvolvedor Web em formação",
-        "btn-projects": "Ver Projetos", "btn-contact": "Contato",
-        "about-title": "Sobre Mim", "about-description": "Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação.",
-        "skills-title": "Minhas Skills", "projects-title": "Projetos Recentes",
-        "contact-subtitle": "Vamos conversar?", "btn-send": "Enviar Mensagem",
-        "ph-name": "Seu Nome", "ph-email": "Seu E-mail", "ph-message": "Sua Mensagem"
-    },
-    en: {
-        "nav-home": "Home", "nav-about": "About", "nav-skills": "Skills", "nav-projects": "Projects", "nav-contact": "Contact",
-        "hero-greeting": "Hi, I am", "hero-role": "Web Developer in Training",
-        "btn-projects": "View Projects", "btn-contact": "Contact",
-        "about-title": "About Me", "about-description": "I am a student passionate about technology and web development.",
-        "skills-title": "My Skills", "projects-title": "Recent Projects",
-        "contact-subtitle": "Let's talk?", "btn-send": "Send Message",
-        "ph-name": "Your Name", "ph-email": "Your Email", "ph-message": "Your Message"
+/*==================== LOGICA DO PORTFOLIO - MARCOS MOURA ====================*/
+
+// 1. Log de Verificação (Aparece no console do navegador para saberes que está a funcionar)
+console.log("JavaScript do Portfólio carregado com sucesso!");
+
+// 2. Mudar a aparência do Header ao fazer Scroll
+// Quando desceres mais de 50px, o menu ganha uma sombra e fundo mais sólido
+const scrollHeader = () => {
+    const header = document.querySelector('.header');
+    // Se o scroll for maior que 50, adiciona sombra, senão remove
+    if (window.scrollY >= 50) {
+        header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.4)";
+        header.style.backgroundColor = "rgba(11, 17, 32, 0.98)";
+    } else {
+        header.style.boxShadow = "none";
+        header.style.backgroundColor = "rgba(11, 17, 32, 0.9)";
     }
 };
+window.addEventListener('scroll', scrollHeader);
 
-const langSelect = document.getElementById('language-select');
+// 3. Fechar o menu mobile ao clicar num link (Melhoria de UX)
+// Caso adiciones um menu hamburguer no futuro, isto garante que ele fecha ao clicar
+const navLinks = document.querySelectorAll('.nav-list a');
 
-function updateLanguage(lang) {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        el.textContent = translations[lang][key];
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log(`Navegando para: ${link.textContent}`);
+        // Aqui poderias adicionar o código para fechar o menu mobile
     });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-        const key = el.getAttribute('data-i18n-placeholder');
-        el.placeholder = translations[lang][key];
+});
+
+// 4. Validação Simples de Formulário (Opcional)
+// Apenas para garantir que o utilizador não envia o formulário vazio antes do Formspree agir
+const contactForm = document.querySelector('.form');
+if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+        console.log("Formulário enviado! Redirecionando para o Formspree...");
     });
 }
 
-langSelect.addEventListener('change', (e) => updateLanguage(e.target.value));
+// 5. Scroll Reveal (Animações de entrada)
+// Nota: Isto depende da tag <script src="https://unpkg.com/scrollreveal"></script> no HTML
+// Se a biblioteca estiver carregada, ele faz os elementos aparecerem suavemente
+if (typeof ScrollReveal !== 'undefined') {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2000,
+        delay: 200,
+        reset: false // Não repete a animação ao subir a página (mais profissional)
+    });
 
-ScrollReveal().reveal('.home__content, .skill__card, .project__card', {
-    origin: 'top', distance: '60px', duration: 2000, delay: 200, interval: 100
-});
-
-window.onload = () => updateLanguage('pt');
+    sr.reveal('.home-title, .home-subtitle, .home-btns');
+    sr.reveal('.about-img', { origin: 'left' });
+    sr.reveal('.about-text', { origin: 'right' });
+    sr.reveal('.skill-card', { interval: 100 });
+    sr.reveal('.contact-card');
+}

@@ -137,6 +137,15 @@ header {
     box-shadow: 0 0 15px rgba(0, 217, 255, 0.6),
         0 0 30px rgba(0, 217, 255, 0.4);
     animation: rotate360 8s linear infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo img:hover {
+    animation-play-state: paused;
+    transform: scale(2.0);
+    box-shadow: 0 0 30px rgba(0, 217, 255, 1),
+        0 0 60px rgba(0, 217, 255, 0.8),
+        0 0 90px rgba(0, 217, 255, 0.5);
+    z-index: 1000;
 }
 .nav-menu ul {
     display: flex;
@@ -376,8 +385,8 @@ input:checked+.slider:before {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 45% / 55%;
-    /* Smoother oval shape with rounded top and bottom */
+    border-radius: 40% / 50%;
+    /* Oval shape with well-rounded curves */
     border: 4px solid #00d9ff;
     /* Cyan border matching the reference */
     box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),

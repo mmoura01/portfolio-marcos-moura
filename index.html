@@ -11,16 +11,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="container nav-container">
+        <div class="container header-flex">
             <div class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
-            <nav>
+            <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
-                    <li><button id="theme-toggle"><i class="fa-solid fa-moon"></i></button></li>
+                    <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button></li>
                 </ul>
             </nav>
         </div>
@@ -28,27 +28,29 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="container hero-center">
+            <div class="container hero-content">
                 <span class="greeting">Olá, eu sou</span>
                 <h1 class="name">Marcos Moura</h1>
                 <p class="role">Desenvolvedor Web em formação</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-outline">Contato</a>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-blue">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-dark">Contato</a>
                 </div>
             </div>
         </section>
 
         <section id="about" class="section">
-            <div class="container about-flex">
-                <div class="profile-circle">
-                    <img src="assets/img/profile.jpg" alt="Marcos Moura">
+            <div class="container about-row">
+                <div class="profile-wrapper">
+                    <div class="profile-glow-circle">
+                        <img src="assets/img/profile.jpg" alt="Marcos Moura">
+                    </div>
                 </div>
-                <div class="about-text-box">
+                <div class="about-info">
                     <h2 class="title-blue">Sobre Mim</h2>
                     <p>Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.</p>
                     <p>Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades através de projetos práticos e desafios constantes.</p>
-                    <div class="social-links-row">
+                    <div class="social-links">
                         <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/mu_moura/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -58,58 +60,37 @@
             </div>
         </section>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Minhas Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-box"><i class="devicon-html5-plain colored"></i><p>HTML5</p></div>
-                    <div class="skill-box"><i class="devicon-css3-plain colored"></i><p>CSS3</p></div>
-                    <div class="skill-box"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-                    <div class="skill-box"><i class="devicon-python-plain colored"></i><p>Python</p></div>
-                </div>
-            </div>
-        </section>
-
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Projetos Recentes</h2>
+                <h2 class="section-heading">Projetos Recentes</h2>
                 <div class="projects-grid">
-                    <div class="card">
-                        <div class="card-img"><img src="assets/img/antigravity.jpg" alt="Projeto 1"></div>
-                        <div class="card-body">
+                    <article class="project-card">
+                        <div class="card-thumb"><img src="assets/img/antigravity.jpg" alt="Antigravity Link"></div>
+                        <div class="card-content">
                             <h3>Antigravity Link Generator</h3>
                             <p>Gerador de links dinâmicos focado em UX e produtividade para redes sociais.</p>
-                            <div class="card-links">
+                            <div class="card-footer">
                                 <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank"><i class="fa-solid fa-external-link"></i> Demo</a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img"><img src="assets/img/finance.jpg" alt="Projeto 2"></div>
-                        <div class="card-body">
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-thumb"><img src="assets/img/finance.jpg" alt="Antigravity Finance"></div>
+                        <div class="card-content">
                             <h3>Antigravity Finance</h3>
                             <p>Dashboard de controle financeiro com cálculos automáticos e persistência de dados no LocalStorage.</p>
-                            <div class="card-links">
+                            <div class="card-footer">
                                 <a href="https://github.com/mmoura01/antigravity-finance" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank"><i class="fa-solid fa-external-link"></i> Demo</a>
+                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
-            <div class="footer-icons">
-                <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -70,17 +70,16 @@ img {
     font-weight: 700;
     margin-bottom: 3rem;
     text-align: center;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    display: block;
 }
 .section-title::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
     height: 4px;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     border-radius: 2px;
@@ -140,12 +139,12 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .logo img:hover {
-    animation-play-state: paused;
-    transform: scale(2.0);
+    animation-play-state: paused !important;
+    transform: scale(2.5) !important;
     box-shadow: 0 0 30px rgba(0, 217, 255, 1),
         0 0 60px rgba(0, 217, 255, 0.8),
-        0 0 90px rgba(0, 217, 255, 0.5);
-    z-index: 1000;
+        0 0 90px rgba(0, 217, 255, 0.5) !important;
+    z-index: 1000 !important;
 }
 .nav-menu ul {
     display: flex;
@@ -377,16 +376,16 @@ input:checked+.slider:before {
 /* Hero Image */
 .image-wrapper {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin: 0 auto;
 }
 .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 40% / 50%;
-    /* Oval shape with well-rounded curves */
+    border-radius: 50%;
+    /* Perfect circle */
     border: 4px solid #00d9ff;
     /* Cyan border matching the reference */
     box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),
@@ -756,9 +755,8 @@ footer {
         order: 1;
     }
     .image-wrapper {
-        width: 250px;
-        height: 310px;
-        /* Maintain oval proportion */
+        width: 280px;
+        height: 280px;
     }
     .hero-buttons {
         justify-content: center;
@@ -845,9 +843,8 @@ footer {
         font-size: 1.2rem;
     }
     .image-wrapper {
-        width: 200px;
-        height: 250px;
-        /* Maintain oval proportion */
+        width: 220px;
+        height: 220px;
     }
     .project-image {
         height: 180px;

@@ -3,75 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Moura | Software Engineer</title>
+    <title>Marcos Moura | Portfólio Profissional</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body class="dark-theme">
+<body>
 
-    <header class="header" id="header">
+    <header class="header">
         <nav class="nav container">
-            <a href="#home" class="nav__logo">
-                <img src="assets/img/logo.jpg" alt="Logo" class="nav__logo-img">
+            <a href="#home" class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo de Marcos Moura">
             </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li><a href="#home" class="nav__link" data-i18n="nav-home">Home</a></li>
-                    <li><a href="#about" class="nav__link" data-i18n="nav-about">Sobre</a></li>
-                    <li><a href="#skills" class="nav__link" data-i18n="nav-skills">Skills</a></li>
-                    <li><a href="#projects" class="nav__link" data-i18n="nav-projects">Projetos</a></li>
-                    <li><a href="#contact" class="nav__link" data-i18n="nav-contact">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__actions">
-                <select id="language-select" class="lang__select">
-                    <option value="pt">PT</option>
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                </select>
-                <button id="theme-button" class="theme__btn">
-                    <i class="fa-regular fa-moon"></i>
-                </button>
-            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content">
-                    <span class="home__greeting" data-i18n="hero-greeting">Olá, eu sou</span>
-                    <h1 class="home__title">Marcos Moura</h1>
-                    <h2 class="home__subtitle" data-i18n="hero-role">Desenvolvedor Web em formação</h2>
-                    <div class="home__btns">
-                        <a href="#projects" class="btn btn--primary" data-i18n="btn-projects">Ver Projetos</a>
-                        <a href="#contact" class="btn btn--outline" data-i18n="btn-contact">Contato</a>
-                    </div>
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <h1 class="home-title">Marcos Moura</h1>
+                <p class="home-subtitle">Desenvolvedor Web & Software Engineer em formação</p>
+                <div class="home-btns">
+                    <a href="#skills" class="btn btn-primary">Ver Habilidades</a>
+                    <a href="#contact" class="btn btn-outline">Falar Comigo</a>
                 </div>
             </div>
         </section>
 
         <section class="about section" id="about">
-            <div class="container about__grid">
-                <div class="about__img-container">
-                    <img src="assets/img/profile.jpg" alt="Marcos" class="about__img">
-                </div>
-                <div class="about__data">
-                    <h2 class="section__title-left" data-i18n="about-title">Sobre Mim</h2>
-                    <p class="about__text" data-i18n="about-description">
-                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos.
-                    </p>
-                    <div class="about__social">
-                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" class="social__link"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mmoura01" target="_blank" class="social__link"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://x.com/mmarcosuchoa" target="_blank" class="social__link"><i class="fa-brands fa-x-twitter"></i></a>
+            <div class="container about-grid">
+                <img src="assets/img/profile.jpg" alt="Foto de Marcos Moura" class="profile-img">
+                <div class="about-text">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Sobre Mim</h2>
+                    <p>Olá! Sou o Marcos. Sou um entusiasta da tecnologia focado em criar experiências digitais modernas e eficientes. Atualmente, estou a desenvolver os meus conhecimentos em programação Web, utilizando Inteligência Artificial como aliada para construir projetos inovadores e profissionais.</p>
+                    <div class="socials" style="margin-top: 2rem; display: flex; gap: 1.5rem; font-size: 1.5rem;">
+                        <a href="https://linkedin.com/in/marcos-uchoa-moura" target="_blank" style="color: var(--primary-color);"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mmoura01" target="_blank" style="color: var(--primary-color);"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/mu_moura/" target="_blank" style="color: var(--primary-color);"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -79,68 +57,53 @@
 
         <section class="skills section" id="skills">
             <div class="container">
-                <h2 class="section__title" data-i18n="skills-title">Minhas Skills</h2>
-                <div class="skills__grid">
-                    <div class="skill__card">
+                <h2 class="section-title">Minhas Tecnologias</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
                         <i class="devicon-html5-plain colored"></i>
-                        <p class="skill__name">HTML5</p>
+                        <p>HTML5</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill-card">
                         <i class="devicon-css3-plain colored"></i>
-                        <p class="skill__name">CSS3</p>
+                        <p>CSS3</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill-card">
                         <i class="devicon-javascript-plain colored"></i>
-                        <p class="skill__name">JavaScript</p>
+                        <p>JavaScript</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill-card">
                         <i class="devicon-python-plain colored"></i>
-                        <p class="skill__name">Python</p>
+                        <p>Python</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects section" id="projects">
-            <div class="container">
-                <h2 class="section__title" data-i18n="projects-title">Projetos Recentes</h2>
-                <div class="projects__grid grid">
-                    <article class="project__card">
-                        <div class="project__img-box"><img src="assets/img/antigravity.jpg" alt="Antigravity"></div>
-                        <div class="project__content">
-                            <h3>Antigravity Link</h3>
-                            <p data-i18n="project1-desc">Gerador de links dinâmicos focado em UX.</p>
-                            <div class="project__links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="project__link"><i class="fa-brands fa-github"></i> Código</a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
         <section class="contact section" id="contact">
             <div class="container">
-                <h2 class="section__title" data-i18n="nav-contact">Contato</h2>
-                <div class="contact__grid grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle" data-i18n="contact-subtitle">Vamos conversar?</h3>
-                        <div class="contact__list">
-                            <a href="mailto:marcoscuchoa2007@gmail.com" class="contact__item"><i class="fa-solid fa-envelope"></i> e-mail</a>
-                            <a href="https://wa.me/5592993426359" target="_blank" class="contact__item"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                        </div>
-                    </div>
-                    <form action="https://formspree.io/f/xzdeyjkk" method="POST" class="contact__form">
-                        <input type="text" name="name" class="contact__input" data-i18n-placeholder="ph-name" required>
-                        <input type="email" name="email" class="contact__input" data-i18n-placeholder="ph-email" required>
-                        <textarea name="message" rows="5" class="contact__input" data-i18n-placeholder="ph-message" required></textarea>
-                        <button type="submit" class="btn btn--primary" data-i18n="btn-send">Enviar Mensagem</button>
+                <div class="contact-card">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Diz Olá!</h2>
+                    <p style="text-align: center; color: var(--text-gray);">Tens um desafio ou queres apenas conversar sobre tecnologia? Envia uma mensagem!</p>
+                    
+                    <form action="https://formspree.io/f/xzdeyjkk" method="POST" class="form">
+                        <input type="text" name="name" placeholder="Teu Nome" required>
+                        <input type="email" name="email" placeholder="Teu E-mail" required>
+                        <textarea name="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.6;">Desenvolvido com auxílio de IA</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

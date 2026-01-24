@@ -165,6 +165,15 @@ body.light-theme .header {
     cursor: pointer;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-primary);
+    transition: 0.3s;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -247,23 +256,17 @@ body.light-theme .header {
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--accent-color);
-    /* Dynamic shadow based on theme for better highlight */
     box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
     transition: var(--transition);
 }
 
 body.light-theme .img-wrapper {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-color: var(--accent-color);
 }
 
 .img-wrapper:hover {
     transform: scale(1.02);
     box-shadow: 0 0 35px rgba(56, 189, 248, 0.6);
-}
-
-body.light-theme .img-wrapper:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .about-text p {
@@ -320,7 +323,7 @@ body.light-theme .img-wrapper:hover {
     font-weight: 500;
 }
 
-/* Projects Section */
+/* Projects Section - ATUALIZADO COM HOVER E ZOOM */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -329,23 +332,37 @@ body.light-theme .img-wrapper:hover {
 
 .project-card {
     background-color: var(--card-bg);
-    border-radius: 10px;
+    border-radius: 12px; /* Ligeiramente mais arredondado */
     overflow: hidden;
     border: 1px solid var(--border-color);
-    transition: var(--transition);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Card sobe ao passar o mouse */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-color);
 }
 
 .project-image {
-    height: 200px;
+    height: 220px; /* Um pouco mais de altura */
     background-color: var(--bg-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Importante para o zoom da imagem */
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1); /* Efeito de Zoom na foto */
 }
 
 .project-image .placeholder-img {
@@ -360,6 +377,7 @@ body.light-theme .img-wrapper:hover {
 .project-info h3 {
     margin-bottom: 0.5rem;
     color: var(--accent-color);
+    font-size: 1.3rem;
 }
 
 .project-info p {
@@ -378,11 +396,17 @@ body.light-theme .img-wrapper:hover {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .link-icon:hover {
     color: var(--accent-color);
+}
+
+.link-icon.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* Contact Section */
@@ -418,6 +442,7 @@ body.light-theme .img-wrapper:hover {
 .contact-btn:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 .contact-btn.whatsapp:hover {

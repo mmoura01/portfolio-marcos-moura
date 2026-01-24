@@ -716,32 +716,32 @@ input:checked+.slider:before {
 }
 
 .email-container {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.email-link {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 50px;
     border: 1px solid var(--glass-border);
-}
-
-.btn-icon {
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
+    transition: all 0.3s;
     font-size: 1.1rem;
+    color: var(--text-color);
 }
 
-.fade-out {
-    opacity: 0;
-    transition: opacity 1s;
-    font-size: 0.8rem;
-    color: var(--green);
+.email-link:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
 }
 
-.fade-in {
-    opacity: 1;
+.email-link i {
+    color: var(--primary-color);
 }
 
 /* Footer */

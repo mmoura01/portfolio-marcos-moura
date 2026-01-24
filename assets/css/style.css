@@ -1,96 +1,116 @@
-/*=============== VARIAVEIS ===============*/
+/* RESET E FUNDO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --first-color: #38bdf8;
-    --first-color-alt: #0ea5e9;
-    --title-color: #f1f5f9;
-    --text-color: #94a3b8;
     --body-color: #0b1120;
     --container-color: #111a2e;
-    --header-bg: rgba(11, 17, 32, 0.9);
-    --transition: all 0.4s ease;
+    --title-color: #f1f5f9;
+    --text-color: #94a3b8;
 }
 
-/*=============== RESET ===============*/
-* { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { 
-    font-family: 'Inter', sans-serif; 
-    background-color: var(--body-color); 
-    color: var(--text-color); 
-    overflow-x: hidden;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-/*=============== REUTILIZÁVEIS ===============*/
-.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
-.grid { display: grid; gap: 2rem; }
-.section { padding: 8rem 0 2rem; min-height: 80vh; } /* "Desgruda" as seções */
-.section__title { font-size: 2.25rem; color: var(--first-color); text-align: center; margin-bottom: 3rem; }
-.section__title-left { font-size: 2rem; color: var(--first-color); margin-bottom: 1.5rem; }
-
-/*=============== HEADER & NAV ===============*/
-.header { 
-    width: 100%; position: fixed; top: 0; left: 0; z-index: 100; 
-    background: var(--header-bg); backdrop-filter: blur(12px); 
-    border-bottom: 1px solid rgba(56, 189, 248, 0.1); 
-}
-.nav { height: 4.5rem; display: flex; justify-content: space-between; align-items: center; }
-.nav__list { display: flex; gap: 2rem; list-style: none; }
-.nav__link { color: var(--text-color); text-decoration: none; font-weight: 500; transition: .3s; }
-.nav__link:hover { color: var(--first-color); }
-.nav__logo-img { height: 45px; width: 45px; border-radius: 50%; border: 2px solid var(--first-color); }
-
-/*=============== HOME ===============*/
-.home { display: flex; align-items: center; }
-.home__title { font-size: 3.5rem; color: var(--title-color); margin: 1rem 0; }
-.home__btns { display: flex; gap: 1rem; margin-top: 2rem; }
-
-/*=============== SKILLS (O que você pediu) ===============*/
-.skills__grid { 
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); /* Força ficar lado a lado */
-    gap: 1.5rem; 
-}
-.skill__card { 
-    background: var(--container-color); 
-    padding: 2.5rem 1rem; 
-    border-radius: 12px; 
-    text-align: center; 
-    border: 1px solid rgba(56, 189, 248, 0.1); 
-    transition: var(--transition);
-}
-.skill__card:hover { 
-    transform: translateY(-10px); 
-    border-color: var(--first-color); 
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); 
-}
-.skill__card i { font-size: 3.5rem; margin-bottom: 1rem; display: block; }
-
-/*=============== PROJETOS ===============*/
-.projects__grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.project__card { 
-    background: var(--container-color); 
-    border-radius: 1rem; overflow: hidden; 
-    border: 1px solid rgba(56, 189, 248, 0.1); 
-}
-.project__img-box img { width: 100%; height: 200px; object-fit: cover; }
-.project__content { padding: 1.5rem; }
-
-/*=============== CONTATO ===============*/
-.contact__grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.contact__input { 
-    width: 100%; background: var(--container-color); 
-    border: 1px solid rgba(56, 189, 248, 0.1); 
-    padding: 1rem; border-radius: .5rem; color: #fff; margin-bottom: 1rem;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-/*=============== BOTÕES ===============*/
-.btn { padding: 1rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-block; cursor: pointer; }
-.btn--primary { background: var(--first-color); color: #fff; border: none; }
-.btn--outline { border: 2px solid var(--first-color); color: var(--first-color); }
+/* HEADER FIXO */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(11, 17, 32, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
 
-/*=============== RESPONSIVIDADE ===============*/
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* SEÇÕES - ESPAÇAMENTO PARA NÃO SOBREPOR */
+section {
+    padding: 100px 0 60px; /* Isso evita que o menu cubra o conteúdo */
+    min-height: 100vh;
+}
+
+.section__title {
+    font-size: 2.25rem;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* SKILLS - 4 COLUNAS LADO A LADO */
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.skill__card {
+    background: var(--container-color);
+    padding: 2.5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.skill__card i {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* RESPONSIVIDADE (CELULAR) */
 @media screen and (max-width: 768px) {
-    .nav__list { display: none; } /* Oculta menu no mobile para não quebrar */
+    .nav__menu { display: none; }
     .skills__grid { grid-template-columns: repeat(2, 1fr); }
-    .home__title { font-size: 2.5rem; }
+    .section { padding: 80px 0 40px; }
 }
+
+/* BOTÕES */
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn--primary { background: var(--first-color); color: #fff; }
+.btn--outline { border: 2px solid var(--first-color); color: var(--first-color); }

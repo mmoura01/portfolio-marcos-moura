@@ -1,74 +1,137 @@
-:root {
-    --bg-color: #0f172a;
-    --bg-secondary: #1e293b;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-color: #38bdf8;
-    --card-bg: #1e293b;
-    --border-color: #334155;
-    --transition: all 0.3s ease;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body.light-theme {
-    --bg-color: #f8fafc;
-    --bg-secondary: #e2e8f0;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-color: #0284c7;
-    --card-bg: #ffffff;
-    --border-color: #cbd5e1;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Moura | Desenvolvedor Web</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1622" media="(prefers-color-scheme: dark)">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-primary); transition: var(--transition); }
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo Marcos Moura">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-.section { padding: 5rem 0; }
-.section-title { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: var(--accent-color); }
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <span class="greeting">Olá, eu sou</span>
+                <h1 class="name">Marcos Moura</h1>
+                <p class="role">Desenvolvedor Web em formação</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Contato</a>
+                </div>
+            </div>
+        </section>
 
-/* Header */
-.header { background-color: rgba(15, 23, 42, 0.9); position: fixed; width: 100%; top: 0; z-index: 1000; backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); }
-body.light-theme .header { background-color: rgba(248, 250, 252, 0.9); }
-.nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
-.logo img { height: 45px; width: 45px; border-radius: 50%; border: 2px solid var(--accent-color); }
-.nav-list { display: flex; gap: 2rem; }
-.nav-link:hover { color: var(--accent-color); }
+        <section id="about" class="about section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <div class="img-wrapper">
+                        <img src="assets/img/profile.jpg" alt="Marcos Moura" class="profile-pic">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p>
+                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. 
+                        Focado em criar soluções digitais que unem design moderno e funcionalidade. 
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mmoura01" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/mu_moura/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Hero */
-.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
-.name { font-size: 4rem; font-weight: 700; margin-bottom: 1rem; }
-.btn { padding: 0.8rem 2rem; border-radius: 5px; font-weight: 600; text-decoration: none; display: inline-block; }
-.btn-primary { background-color: var(--accent-color); color: white; }
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/antigravity.jpg" alt="Antigravity Link Generator" onerror="this.src='https://via.placeholder.com/400x250?text=Link+Generator'">
+                        </div>
+                        <div class="project-info">
+                            <h3>Antigravity Link Generator</h3>
+                            <p>Gerador de links dinâmicos focado em UX e produtividade para redes sociais. </p>
+                            <div class="project-links">
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-/* Projects Grid & Effects */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
-.project-card { 
-    background-color: var(--card-bg); 
-    border-radius: 12px; 
-    overflow: hidden; 
-    border: 1px solid var(--border-color); 
-    transition: transform 0.4s ease, box-shadow 0.4s ease; 
-}
-.project-card:hover { 
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
-    border-color: var(--accent-color);
-}
-.project-image { height: 200px; overflow: hidden; }
-.project-image img { 
-    width: 100%; height: 100%; object-fit: cover; 
-    transition: transform 0.5s ease; 
-}
-.project-card:hover .project-image img { transform: scale(1.1); }
-.project-info { padding: 1.5rem; }
-.project-links { display: flex; gap: 1rem; margin-top: 1rem; }
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/finance.jpg" alt="Antigravity Finance" onerror="this.src='https://via.placeholder.com/400x250?text=Finance+Dashboard'">
+                        </div>
+                        <div class="project-info">
+                            <h3>Antigravity Finance</h3>
+                            <p>Dashboard de controle financeiro com cálculos automáticos e persistência de dados no LocalStorage. </p>
+                            <div class="project-links">
+                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-/* Contact */
-.contact-buttons { display: flex; gap: 1.5rem; justify-content: center; }
-.contact-btn { padding: 1rem 2rem; border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; }
-.contact-btn:hover { border-color: var(--accent-color); color: var(--accent-color); }
+                </div>
+            </div>
+        </section>
 
-.footer { text-align: center; padding: 2rem; background: var(--bg-secondary); }
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-buttons">
+                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email</a>
+                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-@media (max-width: 768px) { .name { font-size: 2.5rem; } .nav-list { display: none; } }
+    <footer class="footer">
+        <p>&copy; 2026 Marcos Moura. Desenvolvido com 🚀</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

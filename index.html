@@ -1,96 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Moura | Portfólio</title>
+    <title>Marcos Moura | Desenvolvedor Web</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1622" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="container header-flex">
-            <div class="logo"><img src="assets/img/logo.jpg" alt="Logo"></div>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo Marcos Moura">
+            </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container hero-content">
                 <span class="greeting">Olá, eu sou</span>
                 <h1 class="name">Marcos Moura</h1>
                 <p class="role">Desenvolvedor Web em formação</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-blue">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-dark">Contato</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Contato</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="container about-row">
-                <div class="profile-wrapper">
-                    <div class="profile-glow-circle">
-                        <img src="assets/img/profile.jpg" alt="Marcos Moura">
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <div class="img-wrapper">
+                        <!-- Profile image -->
+                        <img src="assets/img/profile.jpg" alt="Marcos Moura" class="profile-pic">
                     </div>
                 </div>
-                <div class="about-info">
-                    <h2 class="title-blue">Sobre Mim</h2>
-                    <p>Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos para criar experiências digitais incríveis.</p>
-                    <p>Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades através de projetos práticos e desafios constantes.</p>
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p>
+                        Sou um estudante apaixonado por tecnologia e desenvolvimento web.
+                        Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos
+                        para criar experiências digitais incríveis.
+                    </p>
+                    <p>
+                        Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades
+                        através de projetos práticos e desafios constantes.
+                    </p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mmoura01" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/mu_moura/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mmoura01" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/mmarcosuchoa" target="_blank" aria-label="Twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
             <div class="container">
-                <h2 class="section-heading">Projetos Recentes</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="card-thumb"><img src="assets/img/antigravity.jpg" alt="Antigravity Link"></div>
-                        <div class="card-content">
-                            <h3>Antigravity Link Generator</h3>
-                            <p>Gerador de links dinâmicos focado em UX e produtividade para redes sociais.</p>
-                            <div class="card-footer">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-                            </div>
-                        </div>
-                    </article>
+                <h2 class="section-title">Minhas Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-python-plain colored"></i>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Projetos Recentes</h2>
+                <div class="projects-grid">
+                    <!-- Project Card Example 1 -->
                     <article class="project-card">
-                        <div class="card-thumb"><img src="assets/img/finance.jpg" alt="Antigravity Finance"></div>
-                        <div class="card-content">
-                            <h3>Antigravity Finance</h3>
-                            <p>Dashboard de controle financeiro com cálculos automáticos e persistência de dados no LocalStorage.</p>
-                            <div class="card-footer">
-                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                        <div class="project-image">
+                            <!-- Placeholder -->
+                            <div class="placeholder-img">Projeto 1</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nome do Projeto</h3>
+                            <p>Descrição breve do projeto e tecnologias usadas.</p>
+                            <div class="project-links">
+                                <a href="#" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
                             </div>
                         </div>
                     </article>
+                    <!-- Project Card Example 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- Placeholder -->
+                            <div class="placeholder-img">Projeto 2</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nome do Projeto</h3>
+                            <p>Descrição breve do projeto e tecnologias usadas.</p>
+                            <div class="project-links">
+                                <a href="#" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <p class="contact-text">Estou disponível para novas oportunidades e colaborações.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">
+                        <i class="fa-solid fa-envelope"></i> Enviar Email
+                    </a>
+                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Marcos Moura. Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="https://github.com/mmoura01"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
+
+
 </html>
+

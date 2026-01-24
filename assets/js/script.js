@@ -5,11 +5,9 @@ const translations = {
         "btn-projects": "Ver Projetos", "btn-contact": "Contato",
         "about-title": "Sobre Mim", "about-description": "Sou um estudante apaixonado por tecnologia e desenvolvimento web. Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos.",
         "skills-title": "Minhas Skills", "projects-title": "Projetos Recentes",
-        "project1-desc": "Gerador de links dinâmicos focado em UX.",
-        "project2-desc": "Dashboard de controle financeiro profissional.",
-        "project-code": "Código", "contact-subtitle": "Vamos conversar?",
-        "contact-text": "Estou disponível para novos projetos.", "btn-send": "Enviar Mensagem",
-        "ph-name": "Seu Nome", "ph-email": "Seu E-mail", "ph-message": "Sua Mensagem"
+        "project1-desc": "Gerador de links dinâmicos focado em UX.", "project2-desc": "Dashboard de controle financeiro profissional.",
+        "project-code": "Código", "contact-subtitle": "Vamos conversar?", "contact-text": "Estou disponível para novos projetos.",
+        "btn-send": "Enviar Mensagem", "ph-name": "Seu Nome", "ph-email": "Seu E-mail", "ph-message": "Sua Mensagem"
     },
     en: {
         "nav-home": "Home", "nav-about": "About", "nav-skills": "Skills", "nav-projects": "Projects", "nav-contact": "Contact",
@@ -17,32 +15,26 @@ const translations = {
         "btn-projects": "View Projects", "btn-contact": "Contact",
         "about-title": "About Me", "about-description": "I am a student passionate about technology and web development. I am building my journey in programming, learning and applying modern concepts.",
         "skills-title": "My Skills", "projects-title": "Recent Projects",
-        "project1-desc": "Dynamic link generator focused on UX.",
-        "project2-desc": "Professional financial control dashboard.",
-        "project-code": "Code", "contact-subtitle": "Let's talk?",
-        "contact-text": "I am available for new projects.", "btn-send": "Send Message",
-        "ph-name": "Your Name", "ph-email": "Your Email", "ph-message": "Your Message"
+        "project1-desc": "Dynamic link generator focused on UX.", "project2-desc": "Professional financial control dashboard.",
+        "project-code": "Code", "contact-subtitle": "Let's talk?", "contact-text": "I am available for new projects.",
+        "btn-send": "Send Message", "ph-name": "Your Name", "ph-email": "Your Email", "ph-message": "Your Message"
     },
     es: {
         "nav-home": "Inicio", "nav-about": "Sobre Mí", "nav-skills": "Habilidades", "nav-projects": "Proyectos", "nav-contact": "Contacto",
         "hero-greeting": "Hola, soy", "hero-role": "Desarrollador Web en formación",
         "btn-projects": "Ver Proyectos", "btn-contact": "Contacto",
-        "about-title": "Sobre Mí", "about-description": "Soy un estudiante apasionado por la tecnología y el desarrollo web. Estoy construyendo mi camino en la programación, aprendendo conceptos modernos.",
+        "about-title": "Sobre Mí", "about-description": "Soy un estudiante apasionado por la tecnología e desenvolvimento web. Estou construindo minha jornada na programação.",
         "skills-title": "Mis Habilidades", "projects-title": "Proyectos Recientes",
-        "project1-desc": "Generador de enlaces dinámicos.",
-        "project2-desc": "Panel de control financiero profesional.",
-        "project-code": "Código", "contact-subtitle": "¿Hablamos?",
-        "contact-text": "Estoy disponible para nuevos proyectos.", "btn-send": "Enviar Mensaje",
-        "ph-name": "Tu Nombre", "ph-email": "Tu Email", "ph-message": "Tu Mensaje"
+        "project1-desc": "Generador de enlaces dinámicos.", "project2-desc": "Panel de control financiero profesional.",
+        "project-code": "Código", "contact-subtitle": "¿Hablamos?", "contact-text": "Estoy disponible para nuevos proyectos.",
+        "btn-send": "Enviar Mensaje", "ph-name": "Tu Nombre", "ph-email": "Tu Email", "ph-message": "Tu Mensaje"
     }
 };
 
 const langSelect = document.getElementById('language-select');
 const themeButton = document.getElementById('theme-button');
 
-// Troca de Idioma
-langSelect.addEventListener('change', (e) => updateLanguage(e.target.value));
-
+// Lógica de Idioma
 function updateLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -55,6 +47,8 @@ function updateLanguage(lang) {
     localStorage.setItem('lang', lang);
 }
 
+langSelect.addEventListener('change', (e) => updateLanguage(e.target.value));
+
 // Tema Dark/Light
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
@@ -64,12 +58,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
 });
 
-// Animações
+// Animações ScrollReveal
 ScrollReveal().reveal('.home__content, .about__img, .skill__card, .project__card, .contact__info', {
     origin: 'top', distance: '60px', duration: 2000, delay: 200, interval: 100
 });
 
-// Inicialização
+// Carregamento Inicial
 window.onload = () => {
     const lang = localStorage.getItem('lang') || 'pt';
     langSelect.value = lang;

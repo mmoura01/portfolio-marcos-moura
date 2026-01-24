@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Moura | Portfólio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
     <header class="header">
@@ -15,12 +14,10 @@
             <a href="#" class="logo"><img src="assets/img/logo.jpg" alt="Logo"></a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
             </nav>
         </div>
     </header>
@@ -28,64 +25,49 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <span class="greeting">Olá, eu sou</span>
                 <h1 class="name">Marcos Moura</h1>
-                <p class="role">Desenvolvedor Web em formação</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-outline">Contato</a>
-                </div>
+                <p>Desenvolvedor Web em formação</p>
             </div>
         </section>
 
         <section id="projects" class="projects section">
             <div class="container">
-                <h2 class="section-title">Meus Projetos</h2>
+                <h2 class="section-title">Projetos</h2>
                 <div class="projects-grid">
                     
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/antigravity.jpg" alt="Antigravity Link" onerror="this.src='https://via.placeholder.com/400x200'">
+                            <img src="assets/img/antigravity.jpg" alt="Projeto 1">
                         </div>
                         <div class="project-info">
-                            <h3>Antigravity Link Generator</h3>
-                            <p>Gerador de links dinâmicos para redes sociais.</p>
+                            <h3>Antigravity Link</h3>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank">Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank">Demo</a>
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="link-icon">GitHub</a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="link-icon">Demo</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/finance.jpg" alt="Antigravity Finance" onerror="this.src='https://via.placeholder.com/400x200'">
+                            <img src="assets/img/finance.jpg" alt="Projeto 2">
                         </div>
                         <div class="project-info">
                             <h3>Antigravity Finance</h3>
-                            <p>Dashboard de controle financeiro com LocalStorage.</p>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank">Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank">Demo</a>
+                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="link-icon">GitHub</a>
+                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank" class="link-icon">Demo</a>
                             </div>
                         </div>
                     </article>
 
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact section">
-            <div class="container">
-                <h2 class="section-title">Contato</h2>
-                <div class="contact-buttons">
-                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">Email</a>
-                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn">WhatsApp</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2026 Marcos Moura</p>
+    </footer>
 </body>
 </html>

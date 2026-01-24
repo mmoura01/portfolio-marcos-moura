@@ -1,110 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Moura | Desenvolvedor Web</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b1622" media="(prefers-color-scheme: dark)">
-    
+    <title>Marcos Moura | Portfólio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="assets/img/logo.jpg" alt="Logo Marcos Moura">
-            </a>
+            <a href="#" class="logo"><img src="assets/img/logo.jpg" alt="Logo"></a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">Sobre</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projetos</a></li>
-                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <button id="theme-toggle" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
             </nav>
         </div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="container hero-content">
+            <div class="container">
                 <span class="greeting">Olá, eu sou</span>
                 <h1 class="name">Marcos Moura</h1>
                 <p class="role">Desenvolvedor Web em formação</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Ver Projetos</a>
                     <a href="#contact" class="btn btn-outline">Contato</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about section">
-            <div class="container about-container">
-                <div class="about-image">
-                    <div class="img-wrapper">
-                        <img src="assets/img/profile.jpg" alt="Marcos Moura" class="profile-pic">
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h2 class="section-title">Sobre Mim</h2>
-                    <p>
-                        Sou um estudante apaixonado por tecnologia e desenvolvimento web. 
-                        Estou construindo minha jornada na programação, aprendendo e aplicando conceitos modernos
-                        para criar experiências digitais incríveis.
-                    </p>
-                    <p>
-                        Atualmente focado em HTML, CSS, JavaScript e Python, busco sempre aprimorar minhas habilidades
-                        através de projetos práticos e desafios constantes.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/marcos-uchoa-moura" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mmoura01" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/mu_moura/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills section">
-            <div class="container">
-                <h2 class="section-title">Minhas Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="devicon-html5-plain colored"></i>
-                        <h3>HTML5</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="devicon-css3-plain colored"></i>
-                        <h3>CSS3</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="devicon-python-plain colored"></i>
-                        <h3>Python</h3>
-                    </div>
                 </div>
             </div>
         </section>
@@ -116,28 +45,28 @@
                     
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/antigravity.jpg" alt="Antigravity Link Generator" onerror="this.src='https://via.placeholder.com/400x250?text=Antigravity+Link+Generator'">
+                            <img src="assets/img/antigravity.jpg" alt="Antigravity Link" onerror="this.src='https://via.placeholder.com/400x200'">
                         </div>
                         <div class="project-info">
                             <h3>Antigravity Link Generator</h3>
-                            <p>Gerador de links dinâmicos focado em UX e produtividade para redes sociais.</p>
+                            <p>Gerador de links dinâmicos para redes sociais.</p>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/mmoura01/antigravity-link-generator" target="_blank">Código</a>
+                                <a href="https://mmoura01.github.io/antigravity-link-generator/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/finance.jpg" alt="Antigravity Finance" onerror="this.src='https://via.placeholder.com/400x250?text=Antigravity+Finance'">
+                            <img src="assets/img/finance.jpg" alt="Antigravity Finance" onerror="this.src='https://via.placeholder.com/400x200'">
                         </div>
                         <div class="project-info">
                             <h3>Antigravity Finance</h3>
-                            <p>Dashboard de controle financeiro com cálculos em tempo real e persistência de dados no LocalStorage.</p>
+                            <p>Dashboard de controle financeiro com LocalStorage.</p>
                             <div class="project-links">
-                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank" class="link-icon"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank" class="link-icon"><i class="fa-solid fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/mmoura01/antigravity-finance" target="_blank">Código</a>
+                                <a href="https://mmoura01.github.io/antigravity-finance/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </article>
@@ -148,24 +77,14 @@
 
         <section id="contact" class="contact section">
             <div class="container">
-                <h2 class="section-title">Vamos Conversar?</h2>
+                <h2 class="section-title">Contato</h2>
                 <div class="contact-buttons">
-                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">
-                        <i class="fa-solid fa-envelope"></i> Enviar Email
-                    </a>
-                    <a href="https://wa.me/+5592993426359" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                    </a>
+                    <a href="mailto:marcoscuchoa2007@gmail.com" class="contact-btn">Email</a>
+                    <a href="https://wa.me/+5592993426359" target="_blank" class="contact-btn">WhatsApp</a>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Marcos Moura. Desenvolvido com 🚀</p>
-        </div>
-    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>

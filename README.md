@@ -1,6 +1,6 @@
 # 🚀 Portfólio Profissional - Marcos Moura
 
-Bem-vindo ao meu portfólio pessoal! Este projeto apresenta minha jornada no desenvolvimento web, destacando minhas habilidades técnicas e os projetos que venho construindo com foco em UX/UI e interatividade.
+Bem-vindo ao meu portfólio pessoal! Este projeto apresenta minha jornada no desenvolvimento web e análise de dados, destacando minhas habilidades técnicas em criar interfaces modernas e extrair insights valiosos de dados.
 
 👉 [**Acesse o site ao vivo aqui**](https://mmoura01.github.io/portfolio-marcos-moura/)
 
@@ -8,50 +8,65 @@ Bem-vindo ao meu portfólio pessoal! Este projeto apresenta minha jornada no des
 
 ## ✨ Funcionalidades e Diferenciais Técnicos
 
-### 🌀 Animações Avançadas e Identidade Visual
-* **Logo Portal Loop:** Implementação de animação personalizada em CSS (`@keyframes`) que cria um efeito de rotação 360° com escala dinâmica, simulando profundidade e movimento contínuo.
-* **ScrollReveal:** Interface dinâmica com elementos que surgem suavemente conforme a rolagem da página.
-
-### 🌍 Internacionalização (i18n)
-* **Suporte Multi-idioma:** O site é totalmente traduzível para **Português, Inglês e Espanhol**, permitindo uma experiência global para o usuário.
+### 🌀 Identidade Visual e Animações
+* **Logo Portal Loop:** Implementação de animação personalizada em CSS (`@keyframes`) que cria um efeito de rotação 360°, simbolizando dinamismo e evolução contínua. Possui interação ao passar o mouse (hover) que amplia o tamanho.
+* **Foto de Perfil Especial:** Formato circular com borda em neon ciano e efeito de "respiração" (pulse), criando um destaque moderno e tecnológico.
+* **ScrollReveal:** Interface dinâmica com elementos que surgem suavemente conforme a rolagem da página, mantendo o usuário engajado.
 
 ### 🌓 Gestão de Temas (Dark/Light Mode)
-* **Persistência de Dados:** Troca de tema inteligente que utiliza o `localStorage` para lembrar a preferência do usuário em visitas futuras.
-* **Sincronização Mobile:** Ajuste automático da cor da barra de status do navegador para combinar com o tema escolhido.
+* **Persistência de Dados:** Troca de tema inteligente (Sol/Lua) que utiliza o `localStorage` para lembrar a preferência do usuário em visitas futuras.
+* **Estética Premium:** Design baseado em Glassmorphism, com fundos desfocados e bordas sutis.
 
-### 📱 Layout Responsivo Moderno
-* **Grid System:** Seção de "Skills" otimizada para exibir cards lado a lado com ícones coloridos, adaptando-se automaticamente de 4 colunas (Desktop) para 2 ou 1 coluna em dispositivos móveis.
-* **Formulário de Contato:** Integração com a API do Formspree para recebimento de leads diretamente por e-mail.
+### 📱 Layout Responsivo
+* **Mobile First:** Totalmente adaptado para smartphones, tablets e desktops.
+* **Grid System:** Seções de "Tech Stack" e "Projetos" otimizadas para diferentes resoluções de tela.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estrutura semântica e acessível.
-* **CSS3:** Estilização moderna, Flexbox, Grid e variáveis para manutenção simplificada.
-* **JavaScript (ES6+):** Lógica de tradução, controle de temas e manipulação de DOM.
+* **CSS3:** Estilização moderna, Flexbox, Grid, Animações e Variáveis CSS.
+* **JavaScript (ES6+):** Lógica de controle de temas, menu mobile e manipulação de DOM.
+* **Data Science & Analytics:**
+    * **Power BI:** Visualização de dados e Dashboards interativos.
+    * **Python:** Análise de dados e automação (Pandas, scripts).
 * **Bibliotecas Externas:**
-    * [Font Awesome](https://fontawesome.com/) & [Devicons](https://devicon.dev/) (Ícones profissionais)
-    * [Google Fonts](https://fonts.google.com/) (Tipografia Inter)
-    * [ScrollReveal](https://scrollrevealjs.org/) (Efeitos de animação)
-
----
-
-## 🛡️ Segurança e Boas Práticas
-
-* **Links Externos Seguros:** Uso de `target="_blank"` e `rel="noopener noreferrer"`.
-* **Hospedagem:** Publicado via **GitHub Pages**.
-* **SEO:** Configuração de meta tags para melhor visibilidade em buscadores.
+    * [Font Awesome](https://fontawesome.com/) (Ícones profissionais)
+    * [Google Fonts](https://fonts.google.com/) (Tipografia Outfit e JetBrains Mono)
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```text
-/
+Portfolio_Marcos/
+├── css/
+│   └── style.css    # Estilos, temas (Dark/Light) e animações
+├── js/
+│   └── script.js    # Lógica de menu, temas e typewriter
 ├── assets/
-│   ├── css/        # Estilos e animações @keyframes
-│   ├── js/         # Lógica de tradução e controle de tema
-│   └── img/        # Logos e imagens dos projetos
-├── index.html      # Estrutura principal do site
-└── favicon.png     # Ícone de alta resolução da aba
+│   └── images/      # Imagens e logos
+├── index.html       # Estrutura principal do site
+```
+
+---
+
+## 🛡️ Segurança e Boas Práticas
+
+* **Links Seguros:** Uso de `target="_blank"` e `rel="noopener noreferrer"`.
+* **SEO:** Configurado com meta tags para melhor visibilidade em buscadores e redes sociais.
+* **Hospedagem:** Preparado para publicação via **GitHub Pages**.
+
+---
+
+## ✉️ Contato
+
+Estou sempre aberto a novas oportunidades e colaborações.
+
+- **Email:** [marcosuchoa2007@gmail.com](mailto:marcosuchoa2007@gmail.com)
+- **Instagram:** [@mu_moura](https://www.instagram.com/mu_moura/)
+- **WhatsApp:** [Entre em contato](https://wa.me/5592993426359)
+
+---
+Desenvolvido com ❤️ e IA por Marcos Moura.

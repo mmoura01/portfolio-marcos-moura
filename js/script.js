@@ -102,14 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Prevent multiple rapid clicks
         if (isResetting) return;
         isResetting = true;
-        // Remove 'visible' class from all elements
+        // Step 1: Disconnect observer to stop watching
+        revealObserver.disconnect();
+        // Step 2: Remove 'visible' class from all elements
         revealElements.forEach(el => {
             el.classList.remove('visible');
         });
-        // Reset flag after animation completes
+        // Step 3: Wait for CSS transition to complete, then reconnect observer
         setTimeout(() => {
+            // Reconnect observer to all elements
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
             isResetting = false;
-        }, 1000); // Match with CSS animation duration
+        }, 300); // Small delay to ensure smooth reset
     }
     // Add click event to all navigation links
     document.querySelectorAll('.nav-link').forEach(link => {

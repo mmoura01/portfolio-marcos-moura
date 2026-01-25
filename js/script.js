@@ -88,8 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: Stop observing once revealed
-                // observer.unobserve(entry.target); 
             }
         });
     }, {
@@ -98,6 +96,26 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     });
     revealElements.forEach(el => revealObserver.observe(el));
+    // --- Reset Animations on Navigation Click ---
+    function resetScrollRevealAnimations() {
+        // Remove 'visible' class from all elements
+        revealElements.forEach(el => {
+            el.classList.remove('visible');
+        });
+        // Small delay to ensure smooth transition
+        setTimeout(() => {
+            // Re-observe all elements so they animate again when scrolled into view
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
+        }, 100);
+    }
+    // Add click event to all navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            resetScrollRevealAnimations();
+        });
+    });
     // --- Copy Email to Clipboard (Optional - Element needs to vary) ---
     // const copyBtn = document.getElementById('copy-email-btn');
     // if(copyBtn) {

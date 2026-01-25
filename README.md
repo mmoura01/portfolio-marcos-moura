@@ -2,7 +2,7 @@
 
 Bem-vindo ao meu portfólio pessoal! Este projeto apresenta minha jornada no desenvolvimento web, destacando minhas habilidades técnicas e os projetos que venho construindo com foco em UX/UI e interatividade.
 
-👉 [**Acesse o site ao vivo aqui**](https://mmoura01.github.io/)
+👉 [**Acesse o site ao vivo aqui**](https://mmoura01.github.io/portfolio-marcos-moura/)
 
 ---
 

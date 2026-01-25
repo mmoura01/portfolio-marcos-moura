@@ -97,18 +97,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     revealElements.forEach(el => revealObserver.observe(el));
     // --- Reset Animations on Navigation Click ---
+    let isResetting = false; // Prevent multiple simultaneous resets
     function resetScrollRevealAnimations() {
+        // Prevent multiple rapid clicks
+        if (isResetting) return;
+        isResetting = true;
         // Remove 'visible' class from all elements
         revealElements.forEach(el => {
             el.classList.remove('visible');
         });
-        // Small delay to ensure smooth transition
+        // Reset flag after animation completes
         setTimeout(() => {
-            // Re-observe all elements so they animate again when scrolled into view
-            revealElements.forEach(el => {
-                revealObserver.observe(el);
-            });
-        }, 100);
+            isResetting = false;
+        }, 1000); // Match with CSS animation duration
     }
     // Add click event to all navigation links
     document.querySelectorAll('.nav-link').forEach(link => {

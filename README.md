@@ -44,6 +44,15 @@ O portfólio detalha minha trilha intensiva iniciada em 2026, com foco em instit
 
 ---
 
+## 🤖 IA-Driven Workflow & Produtividade
+
+Este projeto não apenas reflete minhas habilidades técnicas, mas também minha capacidade de operar no topo das tecnologias emergentes:
+*   **Pair Programming com IA:** O desenvolvimento deste portfólio utilizou ferramentas de IA Generativa para agilizar a codificação e otimizar a arquitetura do projeto.
+*   **Prompt Engineering:** Habilidade em traduzir requisitos complexos em comandos precisos para acelerar o ciclo de entrega e garantir a qualidade técnica.
+*   **Otimização de Dados:** Uso de IA como suporte para refinamento de algoritmos e automação de processos de ETL.
+
+---
+
 ## 📁 Estrutura do Projeto
 
 ```text

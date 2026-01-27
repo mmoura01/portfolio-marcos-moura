@@ -279,7 +279,9 @@ input:checked+.slider:before {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* Increased padding to prevent glow clipping */
     display: flex;
     align-items: center;
     position: relative;
@@ -442,8 +444,11 @@ input:checked+.slider:before {
 .image-wrapper {
     position: relative;
     width: 450px;
-    height: 550px; /* Taller than wide for oval effect */
+    height: 550px;
+    /* Taller than wide for oval effect */
     margin: 0 auto;
+    overflow: visible;
+    /* Ensure shadow is not clipped by wrapper */
 }
 
 .image-wrapper img {
@@ -900,7 +905,8 @@ footer {
 
     .image-wrapper {
         width: 280px;
-        height: 350px; /* Proportional oval for mobile */
+        height: 350px;
+        /* Proportional oval for mobile */
     }
 
     .hero-buttons {
@@ -992,6 +998,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 60px;
+        /* Ensure space for glow on mobile */
+    }
+
     .container {
         padding: 0 15px;
     }
@@ -1006,7 +1017,8 @@ footer {
 
     .image-wrapper {
         width: 220px;
-        height: 275px; /* Proportional oval for small mobile */
+        height: 275px;
+        /* Proportional oval for small mobile */
     }
 
     .project-image {

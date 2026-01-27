@@ -491,64 +491,141 @@ input:checked+.slider:before {
     margin: 0 auto;
 }
 
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 4rem auto 0;
+}
+
 .timeline::after {
     content: '';
     position: absolute;
-    width: 4px;
+    width: 2px;
     background: var(--glass-border);
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -2px;
-    border-radius: 2px;
+    margin-left: -1px;
 }
 
 .timeline-item {
-    padding: 10px 40px;
+    margin-bottom: 3rem;
     position: relative;
     width: 50%;
 }
 
 .timeline-item:nth-child(odd) {
     left: 0;
+    padding-right: 50px;
     text-align: right;
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
+    padding-left: 50px;
+    text-align: left;
 }
 
 .timeline-dot {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: var(--accent-color);
     border-radius: 50%;
     position: absolute;
-    top: 15px;
-    right: -10px;
-    z-index: 1;
-    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.2);
+    top: 20px;
+    right: -8px;
+    z-index: 10;
+    box-shadow: 0 0 10px var(--accent-color);
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-    left: -10px;
+    left: -8px;
 }
 
 .timeline-date {
-    color: var(--primary-color);
     font-weight: 700;
-    margin-bottom: 5px;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: block;
 }
 
-.timeline-content {
-    padding: 15px;
-    background: var(--glass-bg);
-    /* Use semi-transparent background not the heavy box shadow for cleaner look inside glass container */
-    border-radius: 8px;
-    border: 1px solid var(--glass-border);
+.training-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
 }
 
-.timeline-content h3 {
+.training-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.training-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.training-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    background: white;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) .training-header {
+    flex-direction: row-reverse;
+}
+
+.training-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.training-info {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.timeline-item:nth-child(odd) .badge-container {
+    justify-content: flex-end;
+}
+
+.tech-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #10b981;
+    color: white;
     margin-bottom: 5px;
 }
 
@@ -958,81 +1035,4 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        /* Smaller cards */
-    }
-
-    .about,
-    .skills,
-    .projects,
-    .contact {
-        padding: 60px 0;
-        /* Reduce vertical padding */
-    }
-
-    /* Timeline Mobile */
-    .timeline::after {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 15px;
-        margin-bottom: 2rem;
-    }
-
-    .timeline-item:nth-child(even) {
-        left: 0;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        text-align: left;
-    }
-
-    .timeline-dot,
-    .timeline-item:nth-child(even) .timeline-dot {
-        left: 10px;
-        right: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 80px 0 60px;
-        /* Ensure space for glow on mobile */
-    }
-
-    .container {
-        padding: 0 15px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.2rem;
-    }
-
-    .image-wrapper {
-        width: 220px;
-        height: 275px;
-        /* Proportional oval for small mobile */
-    }
-
-    .project-image {
-        height: 180px;
-    }
-
-    .footer-content {
-        font-size: 0.8rem;
-    }
-
-    /* Ensure buttons stack if screen is very narrow */
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
  

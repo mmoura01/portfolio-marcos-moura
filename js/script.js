@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Typewriter Effect ---
     const textElement = document.getElementById('typewriter');
     const texts = [
-        'echo "Olá, Mundo!";',
-        'print("Dados & Tech");',
-        '<span>Power BI Lover...</span>',
-        'while(studying) { evolve(); }'
+        'Data Analyst Student',
+        'IFRS Web Developer',
+        'Storytelling with Power BI',
+        'while(coding) { analyze(); }'
     ];
     let count = 0;
     let index = 0;

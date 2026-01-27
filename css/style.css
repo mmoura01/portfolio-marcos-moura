@@ -567,16 +567,16 @@ input:checked+.slider:before {
 .training-header {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .training-logo {
-    width: 45px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     background: white;
-    padding: 6px;
-    border-radius: 10px;
+    padding: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 

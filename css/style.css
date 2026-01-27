@@ -442,7 +442,7 @@ input:checked+.slider:before {
 .image-wrapper {
     position: relative;
     width: 450px;
-    height: 450px;
+    height: 550px; /* Taller than wide for oval effect */
     margin: 0 auto;
 }
 
@@ -451,7 +451,7 @@ input:checked+.slider:before {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    /* Perfect circle */
+    /* Creates a perfect oval based on container dimensions */
     border: 4px solid #00d9ff;
     /* Cyan border matching the reference */
     box-shadow: 0 0 30px rgba(0, 217, 255, 0.8),
@@ -900,7 +900,7 @@ footer {
 
     .image-wrapper {
         width: 280px;
-        height: 280px;
+        height: 350px; /* Proportional oval for mobile */
     }
 
     .hero-buttons {
@@ -1006,7 +1006,7 @@ footer {
 
     .image-wrapper {
         width: 220px;
-        height: 220px;
+        height: 275px; /* Proportional oval for small mobile */
     }
 
     .project-image {

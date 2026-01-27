@@ -1035,4 +1035,85 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
- 
+        /* Smaller cards */
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 60px 0;
+        /* Reduce vertical padding */
+    }
+
+    /* Timeline Mobile */
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        text-align: left;
+    }
+
+    .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 10px;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 60px;
+        /* Ensure space for glow on mobile */
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .image-wrapper {
+        width: 220px;
+        height: 275px;
+        /* Proportional oval for small mobile */
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .footer-content {
+        font-size: 0.8rem;
+    }
+
+    /* Ensure buttons stack if screen is very narrow */
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

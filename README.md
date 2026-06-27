@@ -7,7 +7,7 @@ AI Engineer | Especialista em SST & Indústria | Manaus, AM
 
 
 
-👉 Acesse o portfólio ao vivo:https://mmoura01.github.io/portfolio-marcos-moura/
+👉 Acesse o portfólio ao vivo
 
 
 👤 Sobre este Portfólio
@@ -119,11 +119,8 @@ portfolio-marcos-moura/
 
 
 Email: marcosuchoa2007@gmail.com
-
 GitHub: github.com/mmoura01
-
 Instagram: @mu_moura
-
 WhatsApp: +55 (92) 9 9342-6359
 
 

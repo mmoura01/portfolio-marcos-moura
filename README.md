@@ -7,7 +7,7 @@ AI Engineer | Especialista em SST & Indústria | Manaus, AM
 
 
 
-👉 Acesse o portfólio ao vivo
+👉 Acesse o portfólio ao vivo:https://mmoura01.github.io/portfolio-marcos-moura/
 
 
 👤 Sobre este Portfólio

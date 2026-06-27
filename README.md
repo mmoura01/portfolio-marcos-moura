@@ -1,100 +1,106 @@
-🤖 Portfólio Profissional — Marcos Moura
+# 🤖 Portfólio Profissional — Marcos Moura
+### AI Engineer | Especialista em SST & Indústria | Manaus, AM
 
-AI Engineer | Especialista em SST & Indústria | Manaus, AM
+> *"O profissional que entende o problema industrial por dentro e sabe construir a solução com IA ainda é raro no mercado. Estou me tornando esse profissional."*
 
+👉 [**Acesse o portfólio ao vivo**](https://mmoura01.github.io/portfolio-marcos-moura/)
 
-"O profissional que entende o problema industrial por dentro e sabe construir a solução com IA ainda é raro no mercado. Estou me tornando esse profissional."
+---
 
+## 👤 Sobre este Portfólio
 
+Este portfólio representa minha transição estratégica de **+10 anos como Técnico de Segurança e Saúde no Trabalho (SST)** na indústria de Manaus para **AI Engineer especializado em SST e Indústria**.
 
-👉 Acesse o portfólio ao vivo
+Não é um portfólio de exercícios de curso. São **projetos reais**, construídos para resolver **problemas reais** do setor industrial — automatizando processos, criando agentes de IA e transformando dados em decisões.
 
+---
 
-👤 Sobre este Portfólio
+## 🚀 Projetos em Destaque
 
-Este portfólio representa minha transição estratégica de +10 anos como Técnico de Segurança e Saúde no Trabalho (SST) na indústria de Manaus para AI Engineer especializado em SST e Indústria.
+| # | Projeto | Tecnologia | Status |
+|---|---|---|---|
+| 01 | Agente RAG — Avaliação de Ideias Corporativas | Copilot Studio + RAG | ✅ Concluído |
+| 02 | Automação Python — Organização de Certificados SST | Python + AI-Assisted | ✅ Concluído |
+| 03 | Dashboard SST — 6 Indicadores Industriais | Power BI + DAX + HTML | ✅ Concluído |
+| 04 | RPA — Importação de Certificados no Vetor/HCM | Power Automate Desktop | 🔄 Em andamento |
+| 05 | Gerador de Links para Redes Sociais | HTML + JS + Google IDX | ✅ [Demo ao vivo](https://mmoura01.github.io/antigravity-link-generator/) |
+| 06 | Dashboard Financeiro Pessoal | HTML + CSS + JS | ✅ [Demo ao vivo](https://mmoura01.github.io/mmoura01-antigravity-finance/) |
+| 07 | Convite Digital — Aniversário de 1 Ano | HTML + CSS + Google IDX | ✅ [Demo ao vivo](https://mmoura01.github.io/ConviteHeloisa/) |
+| 08 | Proposta Comercial Interativa | HTML + Tailwind CSS | ✅ [Demo ao vivo](https://mmoura01.github.io/proposta_trajanos_engenharia/) |
 
-Não é um portfólio de exercícios de curso. São projetos reais, construídos para resolver problemas reais do setor industrial — automatizando processos, criando agentes de IA e transformando dados em decisões.
+---
 
+## 🎓 Formação e Certificações
 
-🚀 Projetos em Destaque
+| Curso | Instituição | Carga | Status |
+|---|---|---|---|
+| IA com Foco em Copilot | FPFtech — Manaus/AM | 60h | ✅ Certificado |
+| Imersão Inteligência Artificial | Alura | — | ✅ [Certificado verificável](https://cursos.alura.com.br/immersion/certificate/f3feee57-a573-46b1-ace6-d4b8eaf7b505) |
+| AI sem Limites | AWS LATAM | ~6h | 🔄 Em andamento |
+| Python — Do Básico a Aplicações de IA | Data Science Academy | 96h | 🔄 Em andamento |
+| Python Certification v9 | freeCodeCamp | 300h | 🔄 Em andamento |
+| Certificado Profissional em IA | Google / Coursera | — | 🔄 Em andamento |
+| Trilha AI Engineer (meta: AI-102) | Microsoft Learn | — | 📌 Fase 3 |
 
-#ProjetoTecnologiaStatus01Agente RAG — Avaliação de Ideias CorporativasCopilot Studio + RAG✅ Concluído02Automação Python — Organização de Certificados SSTPython + AI-Assisted✅ Concluído03Dashboard SST — 6 Indicadores IndustriaisPower BI + DAX + HTML✅ Concluído04RPA — Importação de Certificados no Vetor/HCMPower Automate Desktop🔄 Em andamento05Gerador de Links para Redes SociaisHTML + JS + Google IDX✅ Demo ao vivo06Dashboard Financeiro PessoalHTML + CSS + JS✅ Demo ao vivo07Convite Digital — Aniversário de 1 AnoHTML + CSS + Google IDX✅ Demo ao vivo08Proposta Comercial InterativaHTML + Tailwind CSS✅ Demo ao vivo
+---
 
+## 🛠️ Tech Stack
 
-🎓 Formação e Certificações
+### Inteligência Artificial & Agentes
+- **Copilot Studio** — Agentes RAG com documentos institucionais reais
+- **LangChain** — Chains, memória, RAG e agentes LLM *(em aprendizado)*
+- **CrewAI** — Orquestração de times de agentes *(em aprendizado)*
+- **Claude API / OpenAI API** — Integração com LLMs
 
-CursoInstituiçãoCargaStatusIA com Foco em CopilotFPFtech — Manaus/AM60h✅ CertificadoImersão Inteligência ArtificialAlura—✅ Certificado verificávelAI sem LimitesAWS LATAM~6h🔄 Em andamentoPython — Do Básico a Aplicações de IAData Science Academy96h🔄 Em andamentoPython Certification v9freeCodeCamp300h🔄 Em andamentoCertificado Profissional em IAGoogle / Coursera—🔄 Em andamentoTrilha AI Engineer (meta: AI-102)Microsoft Learn—📌 Fase 3
+### Automação & RPA
+- **Power Automate Desktop** — Automação de processos em sistemas HCM corporativos
+- **Python** — Scripts de automação, processamento de arquivos, AI-assisted development
 
+### Dados & BI
+- **Power BI + DAX** — Dashboards e indicadores industriais
+- **Visual HTML Content no Power BI** — Visualizações web integradas
+- **SQL** — Consultas e manipulação de dados *(em aprendizado)*
+- **Microsoft Excel** — Avançado: fórmulas, Power Query, tabelas dinâmicas
 
-🛠️ Tech Stack
+### Web & Deploy
+- **HTML5 + CSS3** — Estrutura e estilo
+- **JavaScript** — Interatividade
+- **GitHub Pages** — Deploy de projetos web
+- **Google IDX** — IDE com IA para desenvolvimento assistido
 
-Inteligência Artificial & Agentes
+### Domínio de Especialidade
+- **SST Industrial** — NRs, PCMSO, CIPA, Permissões de Trabalho, indicadores de segurança
+- **Processos industriais** — +10 anos de experiência na indústria de Manaus
 
+---
 
-Copilot Studio — Agentes RAG com documentos institucionais reais
-LangChain — Chains, memória, RAG e agentes LLM (em aprendizado)
-CrewAI — Orquestração de times de agentes (em aprendizado)
-Claude API / OpenAI API — Integração com LLMs
+## 🗺️ Roadmap de Carreira — 2026
 
-
-Automação & RPA
-
-
-Power Automate Desktop — Automação de processos em sistemas HCM corporativos
-Python — Scripts de automação, processamento de arquivos, AI-assisted development
-
-
-Dados & BI
-
-
-Power BI + DAX — Dashboards e indicadores industriais
-Visual HTML Content no Power BI — Visualizações web integradas
-SQL — Consultas e manipulação de dados (em aprendizado)
-Microsoft Excel — Avançado: fórmulas, Power Query, tabelas dinâmicas
-
-
-Web & Deploy
-
-
-HTML5 + CSS3 — Estrutura e estilo
-JavaScript — Interatividade
-GitHub Pages — Deploy de projetos web
-Google IDX — IDE com IA para desenvolvimento assistido
-
-
-Domínio de Especialidade
-
-
-SST Industrial — NRs, PCMSO, CIPA, Permissões de Trabalho, indicadores de segurança
-Processos industriais — +10 anos de experiência na indústria de Manaus
-
-
-
-🗺️ Roadmap de Carreira — 2026
-
+```
 Fase 1 (Mês 1–3)   → Python Fundamentos        ← AGORA
 Fase 2 (Mês 4–6)   → SQL + Power BI Avançado
 Fase 3 (Mês 7–9)   → AI Engineering (LangChain, RAG, AWS)
 Fase 4 (Mês 10–12) → Portfólio completo + Mercado
+```
 
-Meta paralela: Ingresso no IFAM — Tecnólogo em Análise e Desenvolvimento de Sistemas (via SISU, gratuito)
+**Meta paralela:** Ingresso no IFAM — Tecnólogo em Análise e Desenvolvimento de Sistemas (via SISU, gratuito)
 
+---
 
-✨ Funcionalidades do Portfólio
+## ✨ Funcionalidades do Portfólio
 
+- **Modo Dark/Light** com persistência via `localStorage`
+- **Glassmorphism Style** — transparências, blur e bordas sutis
+- **ScrollReveal** — elementos com animação suave na navegação
+- **Design responsivo** — mobile, tablet e desktop
+- **SEO otimizado** — meta tags para buscadores e redes sociais
+- **Timeline de formação** — com logos das instituições e badges de tecnologia
 
-Modo Dark/Light com persistência via localStorage
-Glassmorphism Style — transparências, blur e bordas sutis
-ScrollReveal — elementos com animação suave na navegação
-Design responsivo — mobile, tablet e desktop
-SEO otimizado — meta tags para buscadores e redes sociais
-Timeline de formação — com logos das instituições e badges de tecnologia
+---
 
+## 📁 Estrutura do Projeto
 
-
-📁 Estrutura do Projeto
-
+```
 portfolio-marcos-moura/
 ├── index.html              # Estrutura principal
 ├── css/
@@ -113,19 +119,21 @@ portfolio-marcos-moura/
 ├── profile.jpg             # Foto de perfil
 ├── logo.png                # Logo pessoal
 └── README.md               # Este arquivo
+```
 
+---
 
-✉️ Contato
+## ✉️ Contato
 
+- **Email:** [marcosuchoa2007@gmail.com](mailto:marcosuchoa2007@gmail.com)
+- **GitHub:** [github.com/mmoura01](https://github.com/mmoura01)
+- **Instagram:** [@mu_moura](https://www.instagram.com/mu_moura/)
+- **WhatsApp:** [+55 (92) 9 9342-6359](https://wa.me/5592993426359)
 
-Email: marcosuchoa2007@gmail.com
-GitHub: github.com/mmoura01
-Instagram: @mu_moura
-WhatsApp: +55 (92) 9 9342-6359
-
-
+---
 
 <div align="center">
-Desenvolvido com ❤️ e IA por Marcos Moura — Manaus, Amazônia, Brasil 🌿
+
+Desenvolvido com ❤️ e IA por **Marcos Moura** — Manaus, Amazônia, Brasil 🌿
 
 </div>

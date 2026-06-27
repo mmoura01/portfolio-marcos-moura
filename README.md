@@ -1,86 +1,131 @@
-# 🚀 Portfólio Profissional Elite - Marcos Moura
+🤖 Portfólio Profissional — Marcos Moura
 
-Bem-vindo ao meu portfólio pessoal! Este projeto representa o ápice da minha jornada inicial em Janeiro de 2026, consolidando um perfil híbrido e altamente especializado que une **Desenvolvimento Web** e **Inteligência de Dados (BI)**.
+AI Engineer | Especialista em SST & Indústria | Manaus, AM
 
-👉 [**Acesse o site ao vivo aqui**](https://mmoura01.github.io/portfolio-marcos-moura/)
 
----
+"O profissional que entende o problema industrial por dentro e sabe construir a solução com IA ainda é raro no mercado. Estou me tornando esse profissional."
 
-## ✨ Funcionalidades e Diferenciais Técnicos
 
-### 🌀 Identidade Visual e Experiência do Usuário (UX)
-*   **Foto de Perfil Semi-Oval Estilizada:** Design diferenciado com formato elíptico, borda em neon ciano e efeito de pulsação luminosa (`glow`), criando uma estética futurista.
-*   **Logo Portal Loop 360°:** Animação personalizada em CSS que simboliza o aprendizado contínuo e dinamismo tecnológico.
-*   **ScrollReveal Interativo:** Elementos que surgem suavemente durante a navegação, proporcionando uma experiência fluida e moderna.
 
-### 🌓 Gestão de Temas e Design
-*   **Modo Dark/Light Nativo:** Controle total de cores com persistência via `localStorage`.
-*   **Glassmorphism Style:** Interface baseada em transparências, desfoque de fundo (blur) e bordas sutis, seguindo as tendências de design de 2026.
+👉 Acesse o portfólio ao vivo
 
----
 
-## 🎓 Formação Acadêmica e Técnica (Destaques)
+👤 Sobre este Portfólio
 
-O portfólio detalha minha trilha intensiva iniciada em 2026, com foco em instituições de renome:
+Este portfólio representa minha transição estratégica de +10 anos como Técnico de Segurança e Saúde no Trabalho (SST) na indústria de Manaus para AI Engineer especializado em SST e Indústria.
 
-*   **IFRS (Instituto Federal):** Formação em **Programador Web (200h)** — Foco em arquitetura de sistemas, lógica avançada e bancos de dados SQL.
-*   **DIO & Klabin:** Bootcamp focado em **Business Intelligence & Dashboards** — Metodologia prática com a construção de **12 projetos reais** focados em tomada de decisão.
-*   **Santander Open Academy:** Especialização em **Python**, voltada para automação e resolução de desafios complexos.
+Não é um portfólio de exercícios de curso. São projetos reais, construídos para resolver problemas reais do setor industrial — automatizando processos, criando agentes de IA e transformando dados em decisões.
 
----
 
-## 🛠️ Tecnologias Utilizadas
+🚀 Projetos em Destaque
 
-### **Frontend & Web Design**
-*   HTML5 (Semântica), CSS3 (Flexbox/Grid/Animations), JavaScript (ES6+).
+#ProjetoTecnologiaStatus01Agente RAG — Avaliação de Ideias CorporativasCopilot Studio + RAG✅ Concluído02Automação Python — Organização de Certificados SSTPython + AI-Assisted✅ Concluído03Dashboard SST — 6 Indicadores IndustriaisPower BI + DAX + HTML✅ Concluído04RPA — Importação de Certificados no Vetor/HCMPower Automate Desktop🔄 Em andamento05Gerador de Links para Redes SociaisHTML + JS + Google IDX✅ Demo ao vivo06Dashboard Financeiro PessoalHTML + CSS + JS✅ Demo ao vivo07Convite Digital — Aniversário de 1 AnoHTML + CSS + Google IDX✅ Demo ao vivo08Proposta Comercial InterativaHTML + Tailwind CSS✅ Demo ao vivo
 
-### **Data Analysis & Business Intelligence**
-*   **Power BI:** Linguagem DAX, Power Query (ETL) e Data Storytelling.
-*   **Excel Avançado:** M.I.S e análise de performance.
-*   **Python:** Lógica de programação e tratamento de dados.
 
-### **Workflow & Productivity**
-*   Integração com **Inteligência Artificial** para otimização de desenvolvimento e assets.
+🎓 Formação e Certificações
 
----
+CursoInstituiçãoCargaStatusIA com Foco em CopilotFPFtech — Manaus/AM60h✅ CertificadoImersão Inteligência ArtificialAlura—✅ Certificado verificávelAI sem LimitesAWS LATAM~6h🔄 Em andamentoPython — Do Básico a Aplicações de IAData Science Academy96h🔄 Em andamentoPython Certification v9freeCodeCamp300h🔄 Em andamentoCertificado Profissional em IAGoogle / Coursera—🔄 Em andamentoTrilha AI Engineer (meta: AI-102)Microsoft Learn—📌 Fase 3
 
-## 🤖 IA-Driven Workflow & Produtividade
 
-Este projeto não apenas reflete minhas habilidades técnicas, mas também minha capacidade de operar no topo das tecnologias emergentes:
-*   **Pair Programming com IA:** O desenvolvimento deste portfólio utilizou ferramentas de IA Generativa para agilizar a codificação e otimizar a arquitetura do projeto.
-*   **Prompt Engineering:** Habilidade em traduzir requisitos complexos em comandos precisos para acelerar o ciclo de entrega e garantir a qualidade técnica.
-*   **Otimização de Dados:** Uso de IA como suporte para refinamento de algoritmos e automação de processos de ETL.
+🛠️ Tech Stack
 
----
+Inteligência Artificial & Agentes
 
-## 📁 Estrutura do Projeto
 
-```text
-Portfolio_Marcos/
+Copilot Studio — Agentes RAG com documentos institucionais reais
+LangChain — Chains, memória, RAG e agentes LLM (em aprendizado)
+CrewAI — Orquestração de times de agentes (em aprendizado)
+Claude API / OpenAI API — Integração com LLMs
+
+
+Automação & RPA
+
+
+Power Automate Desktop — Automação de processos em sistemas HCM corporativos
+Python — Scripts de automação, processamento de arquivos, AI-assisted development
+
+
+Dados & BI
+
+
+Power BI + DAX — Dashboards e indicadores industriais
+Visual HTML Content no Power BI — Visualizações web integradas
+SQL — Consultas e manipulação de dados (em aprendizado)
+Microsoft Excel — Avançado: fórmulas, Power Query, tabelas dinâmicas
+
+
+Web & Deploy
+
+
+HTML5 + CSS3 — Estrutura e estilo
+JavaScript — Interatividade
+GitHub Pages — Deploy de projetos web
+Google IDX — IDE com IA para desenvolvimento assistido
+
+
+Domínio de Especialidade
+
+
+SST Industrial — NRs, PCMSO, CIPA, Permissões de Trabalho, indicadores de segurança
+Processos industriais — +10 anos de experiência na indústria de Manaus
+
+
+
+🗺️ Roadmap de Carreira — 2026
+
+Fase 1 (Mês 1–3)   → Python Fundamentos        ← AGORA
+Fase 2 (Mês 4–6)   → SQL + Power BI Avançado
+Fase 3 (Mês 7–9)   → AI Engineering (LangChain, RAG, AWS)
+Fase 4 (Mês 10–12) → Portfólio completo + Mercado
+
+Meta paralela: Ingresso no IFAM — Tecnólogo em Análise e Desenvolvimento de Sistemas (via SISU, gratuito)
+
+
+✨ Funcionalidades do Portfólio
+
+
+Modo Dark/Light com persistência via localStorage
+Glassmorphism Style — transparências, blur e bordas sutis
+ScrollReveal — elementos com animação suave na navegação
+Design responsivo — mobile, tablet e desktop
+SEO otimizado — meta tags para buscadores e redes sociais
+Timeline de formação — com logos das instituições e badges de tecnologia
+
+
+
+📁 Estrutura do Projeto
+
+portfolio-marcos-moura/
+├── index.html              # Estrutura principal
 ├── css/
-│   └── style.css    # Estilos globais, temas e animações
+│   └── style.css           # Estilos, temas e animações
 ├── js/
-│   └── script.js    # Lógica de interface e efeitos
+│   └── script.js           # Lógica de interface
 ├── assets/
-│   └── images/      # Logos oficiais (IFRS, DIO, Santander) e profile
-├── index.html       # Estrutura principal semântica
-└── README.md        # Documentação do projeto
-```
+│   └── images/             # Logos das instituições
+│       ├── fpftech-logo.png
+│       ├── alura-logo.png
+│       ├── aws-logo.png
+│       ├── dsa-logo.png
+│       ├── freecodecamp-logo.png
+│       ├── google-logo.png
+│       └── microsoft-logo.png
+├── profile.jpg             # Foto de perfil
+├── logo.png                # Logo pessoal
+└── README.md               # Este arquivo
 
----
 
-## 🛡️ Segurança e Boas Práticas
-*   **Responsividade Total:** Adaptado para mobile, tablet e desktop ultra-wide.
-*   **SEO & Analytics:** Meta tags configuradas para visibilidade em buscadores e redes sociais.
-*   **Clean Code:** Código comentado e organizado para fácil manutenção.
+✉️ Contato
 
----
 
-## ✉️ Contato
+Email: marcosuchoa2007@gmail.com
+GitHub: github.com/mmoura01
+Instagram: @mu_moura
+WhatsApp: +55 (92) 9 9342-6359
 
-- **Email:** [marcosuchoa2007@gmail.com](mailto:marcosuchoa2007@gmail.com)
-- **Instagram:** [@mu_moura](https://www.instagram.com/mu_moura/)
-- **WhatsApp:** [Converse Comigo](https://wa.me/5592993426359)
 
----
-Desenvolvido com foco em excelência acadêmica e prática por **Marcos Moura**.
+
+<div align="center">
+Desenvolvido com ❤️ e IA por Marcos Moura — Manaus, Amazônia, Brasil 🌿
+
+</div>

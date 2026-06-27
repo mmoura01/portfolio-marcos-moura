@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- Typewriter Effect ---
-    const textElement = document.getElementById('typewriter');
-    const texts = [
-        'Data Analyst Student',
-        'IFRS Web Developer',
-        'Storytelling with Power BI',
-        'while(coding) { analyze(); }'
-    ];
+   // --- Typewriter Effect ---
+const textElement = document.getElementById('typewriter');
+const texts = [
+    'AI Engineer em formação 🤖',
+    '+10 anos de SST na Indústria 🦺',
+    'Construindo com Python & LangChain',
+    'while(learning) { build_with_ai(); }'
+];
     let count = 0;
     let index = 0;
     let currentText = '';

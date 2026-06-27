@@ -119,8 +119,11 @@ portfolio-marcos-moura/
 
 
 Email: marcosuchoa2007@gmail.com
+
 GitHub: github.com/mmoura01
+
 Instagram: @mu_moura
+
 WhatsApp: +55 (92) 9 9342-6359
 
 
